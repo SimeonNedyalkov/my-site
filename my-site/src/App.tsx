@@ -1,14 +1,14 @@
-import Home from "./components/Home"
-import Navigation from "./components/Navigation"
-import './styles/base.css'
+import Home from "./components/Home";
+import Navigation from "./components/Navigation";
+import "./styles/base.css";
 
 function App() {
   return (
     <>
-      <Navigation/>
+      <Navigation />
       <Home></Home>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

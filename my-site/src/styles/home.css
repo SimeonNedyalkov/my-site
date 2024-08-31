@@ -1,3 +1,5 @@
-.homeContainer{
-    color: red;
+.homeContainer {
+  color: red;
+  display: flex;
+  flex-direction: row;
 }
