@@ -15,3 +15,9 @@
     opacity: 0;
   }
 }
+.myCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
