@@ -21,3 +21,9 @@
   justify-content: start;
   align-items: start;
 }
+
+.homeAboutMe {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

@@ -20,7 +20,13 @@ export default function Code() {
             <div>
               <span className="text-white ml-8 mr-2">name:</span>
               <span className="text-gray-400">'</span>
-              <span className="text-amber-300">Master Coder</span>
+              <span className="text-amber-300">Simeon Nedqlkov</span>
+              <span className="text-gray-400">',</span>
+            </div>
+            <div>
+              <span className="text-white ml-8 mr-2">desiredRole:</span>
+              <span className="text-gray-400">'</span>
+              <span className="text-amber-300">Junior Developer</span>
               <span className="text-gray-400">',</span>
             </div>
             <div>
@@ -28,7 +34,11 @@ export default function Code() {
               <span className="text-gray-400">['</span>
               <span className="text-amber-300">React</span>
               <span className="text-gray-400">', '</span>
+              <span className="text-amber-300">Angular</span>
+              <span className="text-gray-400">', '</span>
               <span className="text-amber-300">Node</span>
+              <span className="text-gray-400">', '</span>
+              <span className="text-amber-300">TypeScript</span>
               <span className="text-gray-400">'],</span>
             </div>
             <div>
