@@ -1,7 +1,7 @@
 import { Disclosure, DisclosureButton } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../styles/navigation.css";
-import logo from "../assets/logo/S.png";
+import logo from "../assets/logo/SN_transparent-.png";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -21,9 +21,9 @@ export default function Navigation() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex items-center">
             <img alt="S" src={logo} className="h-40 w-40" />
-            <span className="navName absolute left-24 top-6 text-xl font-bold text-white leading-none">
+            {/* <span className="navName absolute left-24 top-6 text-xl font-bold text-white leading-none">
               NEDYALKOV
-            </span>
+            </span> */}
           </div>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
@@ -52,7 +52,7 @@ export default function Navigation() {
                       item.current
                         ? "bg-gray-900 text-white"
                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-sm font-medium"
+                      "rounded-md px-3 py-2 text-md font-medium"
                     )}
                   >
                     {item.name}

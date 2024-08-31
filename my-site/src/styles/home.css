@@ -7,10 +7,24 @@
   margin: 40px 20px;
 }
 .homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.homeAboutMe {
+  display: flex;
   flex: 1;
+  margin-left: 100px;
 }
 .homeCode {
   display: flex;
   justify-content: flex-end;
   flex: 1;
+}
+
+.exploreProjects {
+  margin-top: 30px;
+  max-width: 300px;
 }
