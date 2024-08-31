@@ -52,7 +52,7 @@ export default function Code() {
               <span className="text-gray-400">,</span>
             </div>
             <div>
-              <span className="text-green-400 ml-8 mr-2">hireable:</span>
+              <span className="text-green-400 ml-8 mr-2">hire:</span>
               <span className="text-orange-400">function</span>
               <span className="text-gray-400">()</span>
               <span className="text-gray-400">{` {`}</span>
@@ -75,7 +75,7 @@ export default function Code() {
               <span className="text-cyan-400 ml-24">this.</span>
               <span className="text-white mr-2">skills.length</span>
               <span className="text-amber-300 mr-2">&gt;=</span>
-              <span className="text-orange-400">5</span>
+              <span className="text-orange-400">10</span>
             </div>
             <div>
               <span className="text-gray-400 ml-16 mr-2">);</span>
