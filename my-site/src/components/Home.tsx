@@ -4,10 +4,12 @@ export default function Home() {
   return (
     <div className="homeContainer">
       <div className="homeAboutMe">
-        <h1 className="homeText text-4xl lg:text-[2.6rem] md:font-extrabold lg:leading-[2.9rem] font-bold text-white leading-10 flex items-center">
-          A passionate
+        <h1 className="homeText text-2xl md:text-3xl lg:text-4xl font-mono font-semibold text-green-300 leading-snug">
+          <span className="text-green-500">$</span> A passionate
           <span className="text-green-400 mx-2">junior developer</span>
+          <br />
           eager to make a difference
+          <br />
           <span className="text-pink-500 mx-2">in the industry</span>
         </h1>
 
