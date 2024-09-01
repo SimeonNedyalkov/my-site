@@ -59,6 +59,7 @@ export default function Home() {
           className="exploreProjects group inline-block px-6 py-3 text-sm no-underline uppercase text-center text-white tracking-wider font-medium md:font-semibold rounded-full bg-gradient-to-r from-lime-500 to-green-600  transition-all duration-200 ease-out hover:text-white hover:no-underline undefined"
           role="button"
           href="https://github.com/SimeonNedyalkov/"
+          target="_blank"
         >
           Explore My Projects
           <svg
