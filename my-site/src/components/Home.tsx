@@ -1,6 +1,9 @@
 import Code from "./Code";
 
 export default function Home() {
+  function onPress() {
+    return alert("This is only for the looks");
+  }
   return (
     <div className="homeContainer">
       <div className="homeAboutMe">
@@ -16,19 +19,25 @@ export default function Home() {
               className="w-4 h-4 flex items-center justify-center text-white cursor-pointer"
               title="Minimize"
             >
-              <span className="text-lg">–</span>
+              <span onClick={onPress} className="text-lg">
+                –
+              </span>
             </div>
             <div
               className="w-4 h-4 mb-0.5 flex items-center justify-center text-white cursor-pointer"
               title="Maximize"
             >
-              <span className="text-lg">□</span>
+              <span onClick={onPress} className="text-lg">
+                □
+              </span>
             </div>
             <div
               className="w-4 h-4 flex items-center justify-center text-white cursor-pointer"
               title="Close"
             >
-              <span className="text-lg">×</span>
+              <span onClick={onPress} className="text-lg">
+                ×
+              </span>
             </div>
           </div>
         </div>

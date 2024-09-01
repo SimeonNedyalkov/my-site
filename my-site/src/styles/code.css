@@ -65,3 +65,55 @@
 .cssVar {
   color: #d7ba7d;
 }
+@media (max-width: 600px) {
+  .myCode {
+    padding: 10px;
+  }
+
+  .homeAboutMe {
+    padding: 10px;
+  }
+  .cursor {
+    width: 1px;
+    height: 0.8em;
+  }
+
+  .const,
+  .var,
+  .equal,
+  .return,
+  .instring,
+  .inObject,
+  .hire,
+  .number,
+  .cssVar {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .myCode {
+    padding: 15px;
+  }
+
+  .homeAboutMe {
+    padding: 15px;
+  }
+
+  .cursor {
+    width: 1.5px;
+    height: 0.9em;
+  }
+
+  .const,
+  .var,
+  .equal,
+  .return,
+  .instring,
+  .inObject,
+  .hire,
+  .number,
+  .cssVar {
+    font-size: 16px;
+  }
+}

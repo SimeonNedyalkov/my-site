@@ -28,3 +28,22 @@
   margin-top: 30px;
   max-width: 300px;
 }
+@media (max-width: 600px) {
+  .homeContainer {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+  }
+  .homeAboutMe {
+    display: flex;
+    margin: 0;
+  }
+  .homeCode {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+}
