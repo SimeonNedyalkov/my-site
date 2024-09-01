@@ -4,17 +4,30 @@ export default function Home() {
   return (
     <div className="homeContainer">
       <div className="homeAboutMe">
-        <h1 className="homeText text-2xl md:text-3xl lg:text-4xl font-mono font-semibold text-green-300 leading-snug">
-          <span className="text-green-500">$</span> A passionate
-          <span className="text-green-400 mx-2">junior developer</span>
-          <br />
-          eager to make a difference
-          <br />
-          <span className="text-pink-500 mx-2">in the industry</span>
-        </h1>
+        <div className="terminal bg-black text-green-300 p-4 rounded-md shadow-lg font-mono text-xl md:text-2xl lg:text-3xl leading-snug">
+          <p className="mb-2">
+            <span className="text-green-500">$</span> echo "Introducing
+            myself..."
+          </p>
+          <p className="ml-4">
+            <span className="text-green-500">{">>>"}</span> A passionate{" "}
+            <span className="text-green-400">junior developer</span>
+          </p>
+          <p className="ml-4">
+            <span className="text-green-500">{">>>"}</span> eager to make a
+            difference
+          </p>
+          <p className="ml-4">
+            <span className="text-green-500">{">>>"}</span>{" "}
+            <span className="text-pink-500">in the industry</span>
+          </p>
+          <p className="mt-4">
+            <span className="text-green-500">$</span> _
+          </p>
+        </div>
 
         <a
-          className="exploreProjects group inline-block px-6 py-3 text-sm no-underline uppercase text-center text-white tracking-wider font-medium md:font-semibold rounded-full bg-gradient-to-r from-pink-500 to-violet-600  transition-all duration-200 ease-out hover:text-white hover:no-underline undefined"
+          className="exploreProjects group inline-block px-6 py-3 text-sm no-underline uppercase text-center text-white tracking-wider font-medium md:font-semibold rounded-full bg-gradient-to-r from-lime-500 to-green-600  transition-all duration-200 ease-out hover:text-white hover:no-underline undefined"
           role="button"
           href="https://github.com/SimeonNedyalkov/"
         >
