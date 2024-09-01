@@ -3,11 +3,12 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../styles/navigation.css";
 import logo from "../assets/logo/S1_transparent-.png";
 import logo2 from "../assets/logo/N_transparent-.png";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
+  { name: "Dashboard", href: "/", current: true },
   { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "Projects", href: "/projects", current: false },
   { name: "Calendar", href: "#", current: false },
 ];
 
@@ -46,9 +47,9 @@ export default function Navigation() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       item.current
@@ -58,7 +59,7 @@ export default function Navigation() {
                     )}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
