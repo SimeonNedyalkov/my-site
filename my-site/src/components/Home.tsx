@@ -4,6 +4,35 @@ export default function Home() {
   return (
     <div className="homeContainer">
       <div className="homeAboutMe">
+        <div className="bg-gray-800 flex items-center justify-between p-2 rounded-t-md">
+          <div className="flex items-center space-x-2">
+            <div className="px-4 py-2 bg-gray-700 text-gray-300 rounded-md">
+              Command Prompt
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <div
+              className="w-4 h-4 flex items-center justify-center text-white cursor-pointer"
+              title="Minimize"
+            >
+              <span className="text-lg">–</span>
+            </div>
+            <div
+              className="w-4 h-4 mb-0.5 flex items-center justify-center text-white cursor-pointer"
+              title="Maximize"
+            >
+              <span className="text-lg">□</span>
+            </div>
+            <div
+              className="w-4 h-4 flex items-center justify-center text-white cursor-pointer"
+              title="Close"
+            >
+              <span className="text-lg">×</span>
+            </div>
+          </div>
+        </div>
+
         <div className="terminal bg-black text-green-300 p-4 rounded-md shadow-lg font-mono text-xl md:text-2xl lg:text-3xl leading-snug">
           <p className="mb-2">
             <span className="text-green-500">$</span> echo "Introducing
