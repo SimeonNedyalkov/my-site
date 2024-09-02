@@ -10,45 +10,31 @@ export default function Home() {
     { url: img2, alt: "Image2" },
     { url: img3, alt: "Image3" },
   ];
-  function onPress() {
-    return alert("This is only for the looks");
-  }
+
   return (
     <div className="homeAll">
       <div className="homeContainer">
         <div className="homeAboutMe">
-          <div className="bg-gray-800 flex items-center justify-between p-2 rounded-t-md">
+          <div className="bg-gray-800 flex items-center justify-between p-3 rounded-t-md border-b border-gray-700">
             <div className="flex items-center space-x-2">
               <div className="px-4 py-2 bg-gray-700 text-gray-300 rounded-md">
                 Command Prompt
               </div>
             </div>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <div
-                className="w-4 h-4 flex items-center justify-center text-white cursor-pointer"
-                title="Minimize"
-              >
-                <span onClick={onPress} className="text-lg">
-                  –
-                </span>
-              </div>
-              <div
-                className="w-4 h-4 mb-0.5 flex items-center justify-center text-white cursor-pointer"
-                title="Maximize"
-              >
-                <span onClick={onPress} className="text-lg">
-                  □
-                </span>
-              </div>
-              <div
-                className="w-4 h-4 flex items-center justify-center text-white cursor-pointer"
+                className="w-3.5 h-3.5 rounded-full bg-red-500 transition-transform transform hover:scale-110"
                 title="Close"
-              >
-                <span onClick={onPress} className="text-lg">
-                  ×
-                </span>
-              </div>
+              ></div>
+              <div
+                className="w-3.5 h-3.5 rounded-full bg-yellow-500 transition-transform transform hover:scale-110"
+                title="Minimize"
+              ></div>
+              <div
+                className="w-3.5 h-3.5 rounded-full bg-green-500 transition-transform transform hover:scale-110"
+                title="Maximize"
+              ></div>
             </div>
           </div>
 
@@ -75,7 +61,7 @@ export default function Home() {
           </div>
 
           <a
-            className="exploreProjects group inline-block px-6 py-3 text-sm no-underline uppercase text-center text-white tracking-wider font-medium md:font-semibold rounded-full bg-gradient-to-r from-lime-500 to-green-600  transition-all duration-200 ease-out hover:text-white hover:no-underline undefined"
+            className="exploreProjects group inline-block px-6 py-3 text-sm no-underline uppercase text-center text-white tracking-wider font-medium md:font-semibold rounded-full bg-gradient-to-r from-lime-500 to-green-600  transition-all duration-200 ease-out hover:text-white hover:no-underline"
             role="button"
             href="https://github.com/SimeonNedyalkov/"
             target="_blank"
