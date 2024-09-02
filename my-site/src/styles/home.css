@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
   margin: 40px 20px;
+  background-image: url("../assets/background/85-854922_code-transparent-binary-picture-black-and-white-stock.png");
+  background-size: cover;
+  background-color: rgba(13, 18, 36, 1);
+  background-blend-mode: overlay;
 }
 .homeText {
   display: flex;

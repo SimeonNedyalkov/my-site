@@ -23,7 +23,7 @@ function classNames(...classes: any[]) {
 export default function Navigation() {
   return (
     <Disclosure as="nav" className="bg-transparent">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="navAll mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex items-center">
             <img alt="S" src={logo} className="absolute h-40 w-40" />
