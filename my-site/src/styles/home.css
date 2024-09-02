@@ -1,14 +1,19 @@
+.homeAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .homeContainer {
   color: red;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin: 40px 20px;
   background-image: url("../assets/background/85-854922_code-transparent-binary-picture-black-and-white-stock.png");
   background-size: cover;
   background-color: rgba(13, 18, 36, 1);
   background-blend-mode: overlay;
+  gap: 3rem;
 }
 .homeText {
   display: flex;
@@ -19,13 +24,16 @@
 
 .homeAboutMe {
   display: flex;
+  justify-content: flex-start;
   flex: 1;
   margin-left: 100px;
+  width: 700px;
 }
 .homeCode {
   display: flex;
   justify-content: flex-end;
   flex: 1;
+  width: 500px;
 }
 
 .exploreProjects {

@@ -1,0 +1,25 @@
+.sliderContainer {
+  position: relative;
+  width: 70%;
+  height: 70%;
+}
+
+.img-slider-button {
+  all: unset;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+}
+.img-slider-button > * {
+  stroke: white;
+  fill: black;
+  width: 2rem;
+  height: 2rem;
+}
+.img-slider-button :hover {
+  background-color: rgb(0, 0, 0, 0.2);
+}
