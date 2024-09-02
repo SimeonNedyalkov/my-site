@@ -5,7 +5,11 @@ import Code from "./Code";
 import Slider from "./Slider";
 
 export default function Home() {
-  const arrayOfImages = [img1, img2, img3];
+  const arrayOfImages = [
+    { url: img1, alt: "Image1" },
+    { url: img2, alt: "Image2" },
+    { url: img3, alt: "Image3" },
+  ];
   function onPress() {
     return alert("This is only for the looks");
   }
@@ -97,7 +101,7 @@ export default function Home() {
           <Code></Code>
         </div>
       </div>
-      <Slider imgUrls={arrayOfImages}></Slider>
+      <Slider images={arrayOfImages}></Slider>
     </div>
   );
 }

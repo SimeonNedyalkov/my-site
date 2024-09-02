@@ -2,22 +2,25 @@ import { useEffect, useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 
 type ImageSliderProps = {
-  imgUrls: string[];
+  images: {
+    url: string;
+    alt: string;
+  }[];
 };
-export default function Slider({ imgUrls }: ImageSliderProps) {
+export default function Slider({ images }: ImageSliderProps) {
   const [imageIndex, setimageIndex] = useState(0);
 
   function previousImage() {
     setimageIndex((index) => {
       if (index === 0) {
-        return imgUrls.length - 1;
+        return images.length - 1;
       }
       return index - 1;
     });
   }
   function nextImage() {
     setimageIndex((index) => {
-      if (index === imgUrls.length - 1) {
+      if (index === images.length - 1) {
         return 0;
       }
       return index + 1;
@@ -26,9 +29,10 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
   return (
     <div className="sliderContainer">
       <div style={{ overflow: "hidden", display: "flex" }}>
-        {imgUrls.map((url) => (
+        {images.map(({ url, alt }) => (
           <img
             key={url}
+            alt={alt}
             src={url}
             className="img-slider-img"
             style={{ translate: `${-100 * imageIndex}%` }}
@@ -62,7 +66,7 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
           gap: "1rem",
         }}
       >
-        {imgUrls.map((_, index) => (
+        {images.map((_, index) => (
           <button
             key={index}
             className="img-dot-buttons"
