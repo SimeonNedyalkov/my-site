@@ -25,7 +25,17 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
   }
   return (
     <div className="sliderContainer">
-      <img src={imgUrls[imageIndex]} alt={`Slide ${imageIndex}`} />
+      <div style={{ overflow: "hidden", display: "flex" }}>
+        {imgUrls.map((url) => (
+          <img
+            key={url}
+            src={url}
+            className="img-slider-img"
+            style={{ translate: `${-100 * imageIndex}%` }}
+          />
+        ))}
+      </div>
+
       <button
         className="img-slider-button"
         style={{ left: 0 }}
@@ -40,6 +50,25 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
       >
         <ArrowBigRight />
       </button>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "0.1rem",
+          left: "50%",
+          translate: "-50%",
+          display: "flex",
+          gap: "0.25rem",
+        }}
+      >
+        {imgUrls.map((_, index) => (
+          <button
+            className="img-dot-buttons"
+            onClick={() => setimageIndex(index)}
+          >
+            {index}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
