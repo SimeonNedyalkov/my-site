@@ -7,35 +7,36 @@ type ImageSliderProps = {
     alt: string;
   }[];
 };
+
 export default function Slider({ images }: ImageSliderProps) {
-  const [imageIndex, setimageIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageIndex((index) => (index === images.length - 1 ? 0 : index + 1));
+    }, 10000);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   function previousImage() {
-    setimageIndex((index) => {
-      if (index === 0) {
-        return images.length - 1;
-      }
-      return index - 1;
-    });
+    setImageIndex((index) => (index === 0 ? images.length - 1 : index - 1));
   }
+
   function nextImage() {
-    setimageIndex((index) => {
-      if (index === images.length - 1) {
-        return 0;
-      }
-      return index + 1;
-    });
+    setImageIndex((index) => (index === images.length - 1 ? 0 : index + 1));
   }
+
   return (
     <div className="sliderContainer">
       <div style={{ overflow: "hidden", display: "flex" }}>
-        {images.map(({ url, alt }) => (
+        {images.map(({ url, alt }, index) => (
           <img
             key={url}
             alt={alt}
             src={url}
             className="img-slider-img"
             style={{ translate: `${-100 * imageIndex}%` }}
+            aria-hidden={imageIndex !== index}
           />
         ))}
       </div>
@@ -46,7 +47,7 @@ export default function Slider({ images }: ImageSliderProps) {
         onClick={previousImage}
         aria-label="viewPreviousImage"
       >
-        <ArrowBigLeft />
+        <ArrowBigLeft aria-hidden />
       </button>
       <button
         className="img-slider-button"
@@ -54,7 +55,7 @@ export default function Slider({ images }: ImageSliderProps) {
         onClick={nextImage}
         aria-label="viewNextImage"
       >
-        <ArrowBigRight />
+        <ArrowBigRight aria-hidden />
       </button>
       <div
         style={{
@@ -70,10 +71,14 @@ export default function Slider({ images }: ImageSliderProps) {
           <button
             key={index}
             className="img-dot-buttons"
-            onClick={() => setimageIndex(index)}
+            onClick={() => setImageIndex(index)}
             aria-label={`viewImage ${index}`}
           >
-            {index === imageIndex ? <CircleDot /> : <Circle />}
+            {index === imageIndex ? (
+              <CircleDot aria-hidden />
+            ) : (
+              <Circle aria-hidden />
+            )}
           </button>
         ))}
       </div>
