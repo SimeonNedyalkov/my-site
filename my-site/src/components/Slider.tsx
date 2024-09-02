@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 
 type ImageSliderProps = {
   imgUrls: string[];
@@ -40,6 +40,7 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
         className="img-slider-button"
         style={{ left: 0 }}
         onClick={previousImage}
+        aria-label="viewPreviousImage"
       >
         <ArrowBigLeft />
       </button>
@@ -47,6 +48,7 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
         className="img-slider-button"
         style={{ right: 0 }}
         onClick={nextImage}
+        aria-label="viewNextImage"
       >
         <ArrowBigRight />
       </button>
@@ -57,15 +59,17 @@ export default function Slider({ imgUrls }: ImageSliderProps) {
           left: "50%",
           translate: "-50%",
           display: "flex",
-          gap: "0.25rem",
+          gap: "1rem",
         }}
       >
         {imgUrls.map((_, index) => (
           <button
+            key={index}
             className="img-dot-buttons"
             onClick={() => setimageIndex(index)}
+            aria-label={`viewImage ${index}`}
           >
-            {index}
+            {index === imageIndex ? <CircleDot /> : <Circle />}
           </button>
         ))}
       </div>
