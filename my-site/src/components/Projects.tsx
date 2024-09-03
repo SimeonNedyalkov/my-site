@@ -1,3 +1,7 @@
 export default function Projects() {
-  return <div>Hello</div>;
+  return (
+    <div className="projectsContainer">
+      <div className="projectsContainer2">Hello</div>
+    </div>
+  );
 }
