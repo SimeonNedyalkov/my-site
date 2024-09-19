@@ -3,6 +3,7 @@ import img2 from "../assets/projects/Screenshot 2024-09-01 155050.png";
 import img3 from "../assets/projects/Screenshot 2024-09-01 161416.png";
 import img4 from "../assets/projects/Screenshot 2024-09-05 212729.png";
 import img5 from "../assets/projects/Screenshot 2024-09-05 212941.png";
+import Bio from "./Bio";
 import Code from "./Code";
 import Slider from "./Slider";
 
@@ -90,6 +91,9 @@ export default function Home() {
         <div className="homeCode">
           <Code></Code>
         </div>
+      </div>
+      <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
+        <Bio />
       </div>
       <Slider images={arrayOfImages}></Slider>
     </div>
