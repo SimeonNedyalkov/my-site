@@ -11,9 +11,9 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Dashboard", href: "/", current: true },
-  { name: "Team", href: "#", current: false },
+  { name: "Team", href: "#sectionTeam", current: false },
   { name: "Projects", href: "/projects", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Calendar", href: "#sectionCalendar", current: false },
 ];
 
 function classNames(...classes: any[]) {
@@ -55,6 +55,7 @@ export default function Navigation() {
                     key={item.name}
                     to={item.href}
                     aria-current={item.current ? "page" : undefined}
+                    id={`section${item.name}`}
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"

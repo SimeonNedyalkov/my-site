@@ -18,6 +18,9 @@ export default function Home() {
 
   return (
     <div className="homeAll">
+      <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
+        <Bio />
+      </div>
       <div className="homeContainer">
         <div className="homeAboutMe">
           <div className="bg-gray-800 flex items-center justify-between p-3 rounded-t-md border-b border-gray-700">
@@ -91,9 +94,6 @@ export default function Home() {
         <div className="homeCode">
           <Code></Code>
         </div>
-      </div>
-      <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
-        <Bio />
       </div>
       <Slider images={arrayOfImages}></Slider>
     </div>
