@@ -35,8 +35,8 @@ export default function Home() {
       <section id="projects">
         <Slider images={arrayOfImages}></Slider>
       </section>
-      <section id="bio" className="flex">
-        <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
+      <section id="bio" className="flex gap-2">
+        <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-6/12">
           <Bio />
         </div>
         <div className="homeCode">
