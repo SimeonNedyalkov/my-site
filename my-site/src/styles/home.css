@@ -5,16 +5,35 @@
   align-items: center;
 }
 .homeContainer {
-  color: red;
+  color: rgb(229, 231, 235);
+  font-family: "Space Grotesk", sans-serif;
   display: flex;
   flex-direction: row;
   margin: 40px 20px;
-  background-image: url("../assets/background/85-854922_code-transparent-binary-picture-black-and-white-stock.png");
-  background-size: cover;
-  background-color: rgba(13, 18, 36, 1);
-  background-blend-mode: overlay;
-  gap: 3rem;
+  gap: 9rem;
   height: 100vh;
+  align-items: center;
+}
+.homeText {
+  width: 600px;
+}
+.homeContainer h1 {
+  display: flex;
+  flex: 0 0;
+  font-size: 48px;
+  margin: 32px 0;
+}
+.homeContainer h2 {
+  display: flex;
+  font-size: 32px;
+  color: rgb(229, 231, 235);
+  padding: 8px;
+}
+.homeContainer p {
+  display: flex;
+  font-size: 20px;
+  color: rgb(229, 231, 235);
+  text-align: left;
 }
 .homeText {
   display: flex;
@@ -38,7 +57,12 @@
   width: 500px;
   height: 600px;
 }
-
+.profilePicture {
+  width: 316px;
+  height: 400px;
+  border-radius: 3%;
+  filter: grayscale(85%);
+}
 .exploreProjects {
   margin-top: 30px;
   max-width: 300px;

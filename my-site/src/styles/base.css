@@ -9,7 +9,9 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(13, 18, 36);
+  background-color: rgb(23, 6, 48);
+  background: linear-gradient(to right, rgb(32, 9, 68), rgb(17, 6, 34)),
+    radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   font-family: "Roboto Condensed", sans-serif;
 }
 

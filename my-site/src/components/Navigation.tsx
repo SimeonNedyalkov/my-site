@@ -1,13 +1,6 @@
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../styles/navigation.css";
 import logo from "../assets/logo/S1_transparent-.png";
 import logo2 from "../assets/logo/N_transparent-.png";
-import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
@@ -79,7 +72,7 @@ export default function Navigation() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 448 512"
                   className="m-2 h-6 w-5"
                   height="1em"
