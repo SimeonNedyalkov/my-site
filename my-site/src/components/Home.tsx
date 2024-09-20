@@ -43,11 +43,7 @@ export default function Home() {
         <Slider images={arrayOfImages}></Slider>
       </section>
 
-      <section
-        id="bio"
-        ref={ref}
-        className={isVisible ? "dynamicBackground flex gap-2" : "flex gap-2"}
-      >
+      <section id="bio">
         <div className="w-6/12">
           <Bio />
         </div>
