@@ -17,7 +17,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="homeAll">
+    <div className="homeAll mt-20">
       <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
         <Bio />
       </div>
@@ -95,7 +95,9 @@ export default function Home() {
           <Code></Code>
         </div>
       </div>
-      <Slider images={arrayOfImages}></Slider>
+      <section id="projects">
+        <Slider images={arrayOfImages}></Slider>
+      </section>
     </div>
   );
 }

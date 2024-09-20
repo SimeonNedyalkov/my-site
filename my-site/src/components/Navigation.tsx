@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Dashboard", href: "/", current: true },
   { name: "Team", href: "#sectionTeam", current: false },
-  { name: "Projects", href: "/projects", current: false },
+  { name: "Projects", href: "#projects", current: false },
   { name: "Calendar", href: "#sectionCalendar", current: false },
 ];
 
@@ -22,75 +22,88 @@ function classNames(...classes: any[]) {
 
 export default function Navigation() {
   return (
-    <Disclosure as="nav" className="bg-transparent">
-      <div className="navAll mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <img alt="S" src={logo} className="absolute h-40 w-40" />
-            <img alt="N" src={logo2} className="absolute left-6 h-40 w-40" />
-            {/* <span className="navName absolute left-24 top-6 text-xl font-bold text-white leading-none">
-              NEDYALKOV
-            </span> */}
-          </div>
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button */}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon
-                aria-hidden="true"
-                className="block h-6 w-6 group-data-[open]:hidden"
-              />
-              <XMarkIcon
-                aria-hidden="true"
-                className="hidden h-6 w-6 group-data-[open]:block"
-              />
-            </DisclosureButton>
-          </div>
-          <div className="flex flex-1 items-center justify-end sm:items-stretch sm:justify-end">
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    id={`section${item.name}`}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-md font-medium"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
+    <div>
+      <nav className="fixed left-0 right-0 top-4 z-50">
+        <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
+          <div className="flex items-center justify-between gap-6">
+            <div>
+              <a className="flex items-center" href="#">
+                <img
+                  src={`${logo}`}
+                  className="position: absolute left-3"
+                  width="100"
+                  alt="logo"
+                />
+                <img
+                  src={`${logo2}`}
+                  className="position: absolute left-6"
+                  width="100"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div>
+              <ul className="flex items-center gap-6">
+                <li>
+                  <a className="text-sm hover:text-green-400" href="#projects">
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a className="text-sm hover:text-green-400" href="#bio">
+                    Bio
+                  </a>
+                </li>
+                <li>
+                  <a className="text-sm hover:text-green-400" href="#skills">
+                    Skills
+                  </a>
+                </li>
+                <li>
+                  <a className="text-sm hover:text-green-400" href="#work">
+                    Work Experience
+                  </a>
+                </li>
+                <li>
+                  <a className="text-sm hover:text-green-400" href="#education">
+                    Education
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
+        <div className="rounded-lg backdrop-blur-md lg:hidden ">
+          <div className="flex items-center justify-between">
+            <div>
+              <a href="#">
+                <img
+                  src="/assets/logo-CVscTaAv.png"
+                  alt="logo"
+                  width="25"
+                  className="m-2"
+                />
+              </a>
+            </div>
+            <div className="flex items-center">
+              <button className="focus:outline-none lg:hidden">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  className="m-2 h-6 w-5"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-      </DisclosurePanel>
-    </Disclosure>
+      </nav>
+    </div>
   );
 }
