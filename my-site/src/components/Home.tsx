@@ -23,7 +23,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="homeAll mt-30">
+    <div id="home" className="homeAll mt-30">
       <div className="homeContainer">
         <div className="homeText">
           <h1>SIMEON NEDYALKOV</h1>

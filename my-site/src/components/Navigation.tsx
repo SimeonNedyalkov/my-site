@@ -1,7 +1,7 @@
 import "../styles/navigation.css";
 import logo from "../assets/logo/S1_transparent-.png";
 import logo2 from "../assets/logo/N_transparent-.png";
-
+import { Link } from "react-scroll";
 export default function Navigation() {
   return (
     <div>
@@ -9,7 +9,14 @@ export default function Navigation() {
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex items-center justify-between gap-6">
             <div>
-              <a className="flex items-center" href="#">
+              <Link
+                className="flex items-center"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 <img
                   src={`${logo}`}
                   className="position: absolute left-3"
@@ -22,19 +29,33 @@ export default function Navigation() {
                   width="100"
                   alt="logo"
                 />
-              </a>
+              </Link>
             </div>
             <div>
               <ul className="flex items-center gap-6">
                 <li>
-                  <a className="text-sm hover:text-green-400" href="#projects">
+                  <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-sm hover:text-green-400"
+                  >
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-sm hover:text-green-400" href="#bio">
+                  <Link
+                    className="text-sm hover:text-green-400"
+                    to="bio"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
                     Bio
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="text-sm hover:text-green-400" href="#skills">

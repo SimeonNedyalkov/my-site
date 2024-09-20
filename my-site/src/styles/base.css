@@ -45,7 +45,7 @@ input:-webkit-autofill::first-line {
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1s ease-out forwards;
-  animation-delay: 0.2s; /* Delay the animation for 1 second */
+  animation-delay: 0.2s;
 }
 @keyframes slideIn {
   0% {
@@ -55,5 +55,28 @@ input:-webkit-autofill::first-line {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.dynamicBackground1 {
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-100%) scale(0.8);
+  animation: popIn 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20%) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
   }
 }
