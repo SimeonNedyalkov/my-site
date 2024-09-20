@@ -40,3 +40,20 @@ input:-webkit-autofill {
 input:-webkit-autofill::first-line {
   color: white !important;
 }
+.dynamicBackground {
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.2s; /* Delay the animation for 1 second */
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

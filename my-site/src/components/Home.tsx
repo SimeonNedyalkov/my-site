@@ -7,8 +7,13 @@ import Bio from "./Bio";
 import Code from "./Code";
 import Slider from "./Slider";
 import picture from "../assets/me/received_737729346932518.jpeg";
+import { useRef } from "react";
+import useOnScreen from "../hooks/targetElement";
 
 export default function Home() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref);
+
   const arrayOfImages = [
     { url: img1, alt: "Image1" },
     { url: img2, alt: "Image2" },
@@ -32,10 +37,17 @@ export default function Home() {
         </div>
         <img className="profilePicture" src={`${picture}`} alt="me" />
       </div>
+
+      {/* Attach ref to the section you want to observe */}
       <section id="projects">
         <Slider images={arrayOfImages}></Slider>
       </section>
-      <section id="bio" className="flex gap-2">
+
+      <section
+        id="bio"
+        ref={ref}
+        className={isVisible ? "dynamicBackground flex gap-2" : "flex gap-2"}
+      >
         <div className="w-6/12">
           <Bio />
         </div>
