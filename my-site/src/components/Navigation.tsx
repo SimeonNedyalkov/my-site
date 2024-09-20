@@ -10,7 +10,7 @@ export default function Navigation() {
           <div className="flex items-center justify-between gap-6">
             <div>
               <Link
-                className="flex items-center"
+                className="flex items-center cursor-pointer"
                 to="home"
                 spy={true}
                 smooth={true}
@@ -40,14 +40,14 @@ export default function Navigation() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="text-sm hover:text-green-400"
+                    className="text-sm hover:text-green-400 cursor-pointer"
                   >
                     Projects
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400"
+                    className="text-sm hover:text-green-400 cursor-pointer"
                     to="bio"
                     spy={true}
                     smooth={true}

@@ -4,7 +4,7 @@ const Code = () => {
   const [activeTab, setActiveTab] = useState("Code.tsx");
 
   return (
-    <div className="codeEditorContainer bg-gray-900 rounded-lg overflow-hidden shadow-lg w-12/12">
+    <div className="codeEditorContainer bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
       {/* Tabs */}
       <div className="bg-gray-800 flex items-center text-gray-300">
         <div
