@@ -36,7 +36,7 @@ export default function Home() {
         <Slider images={arrayOfImages}></Slider>
       </section>
       <section id="bio" className="flex gap-2">
-        <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-6/12">
+        <div className="w-6/12">
           <Bio />
         </div>
         <div className="homeCode">
