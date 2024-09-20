@@ -9,17 +9,6 @@ import logo from "../assets/logo/S1_transparent-.png";
 import logo2 from "../assets/logo/N_transparent-.png";
 import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "Dashboard", href: "/", current: true },
-  { name: "Team", href: "#sectionTeam", current: false },
-  { name: "Projects", href: "#projects", current: false },
-  { name: "Calendar", href: "#sectionCalendar", current: false },
-];
-
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Navigation() {
   return (
     <div>

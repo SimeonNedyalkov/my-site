@@ -17,10 +17,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="homeAll mt-20">
-      <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
-        <Bio />
-      </div>
+    <div className="homeAll mt-40">
       <div className="homeContainer">
         <div className="homeAboutMe">
           <div className="bg-gray-800 flex items-center justify-between p-3 rounded-t-md border-b border-gray-700">
@@ -97,6 +94,11 @@ export default function Home() {
       </div>
       <section id="projects">
         <Slider images={arrayOfImages}></Slider>
+      </section>
+      <section id="bio">
+        <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-10/12">
+          <Bio />
+        </div>
       </section>
     </div>
   );
