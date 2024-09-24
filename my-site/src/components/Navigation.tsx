@@ -58,9 +58,16 @@ export default function Navigation() {
                   </Link>
                 </li>
                 <li>
-                  <a className="text-sm hover:text-green-400" href="#skills">
+                  <Link
+                    className="text-sm hover:text-green-400 cursor-pointer"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
                     Skills
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="text-sm hover:text-green-400" href="#work">

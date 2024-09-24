@@ -9,6 +9,7 @@ import Slider from "./Slider";
 import picture from "../assets/me/received_737729346932518.jpeg";
 import { useRef } from "react";
 import useOnScreen from "../hooks/targetElement";
+import Skills from "./Skills";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement>(null);
@@ -50,6 +51,9 @@ export default function Home() {
         <div className="homeCode">
           <Code></Code>
         </div>
+      </section>
+      <section id="skills">
+        <Skills></Skills>
       </section>
     </div>
   );
