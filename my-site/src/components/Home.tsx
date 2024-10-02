@@ -7,13 +7,19 @@ import Bio from "./Bio";
 import Code from "./Code";
 import Slider from "./Slider";
 import picture from "../assets/me/received_737729346932518.jpeg";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import useOnScreen from "../hooks/targetElement";
 import Skills from "./Skills";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref);
+  const [onFirstCheck, isOnFirstCheck] = useState(false);
+  useEffect(() => {
+    if (isVisible && !onFirstCheck) {
+      isOnFirstCheck(true);
+    }
+  }, [isVisible, onFirstCheck]);
 
   const arrayOfImages = [
     { url: img1, alt: "Image1" },
@@ -51,7 +57,11 @@ export default function Home() {
           <Code></Code>
         </div>
       </section>
-      <section id="skills">
+      <section
+        ref={ref}
+        id="skills"
+        className={onFirstCheck ? "dynamicBackground1 text-7xl" : "text-7xl"}
+      >
         <Skills></Skills>
       </section>
     </div>
