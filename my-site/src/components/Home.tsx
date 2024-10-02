@@ -22,9 +22,8 @@ export default function Home() {
     { url: img4, alt: "Image4" },
     { url: img5, alt: "Image5" },
   ];
-
   return (
-    <div id="home" className="homeAll mt-30">
+    <div id="home" className="homeAll mt-30 antialiased">
       <div className="homeContainer">
         <div className="homeText">
           <h1>SIMEON NEDYALKOV</h1>

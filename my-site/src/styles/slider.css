@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, rgb(32, 9, 68), rgb(17, 6, 34)),
-    radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
 }
 .contentSide {
   width: 15%;

@@ -9,10 +9,17 @@
 body {
   padding: 0;
   margin: 0;
+  background-repeat: no-repeat;
   background-color: rgb(23, 6, 48);
-  background: linear-gradient(to right, rgb(32, 9, 68), rgb(17, 6, 34)),
-    radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgb(40, 11, 85),
+    rgb(32, 8, 64),
+    rgb(17, 6, 34)
+  );
   font-family: "Space Grotesk", sans-serif;
+  background-size: cover;
+  min-height: 600px;
 }
 
 #root {
