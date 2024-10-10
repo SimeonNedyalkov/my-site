@@ -9,7 +9,7 @@ type ImageSliderProps = {
     url: string;
     alt: string;
     demoUrl: string;
-    liveSiteUrl: string;
+    projectCode: string;
   }[];
 };
 
@@ -18,7 +18,7 @@ export default function Slider({ projects }: ImageSliderProps) {
   const [imageName, setImageName] = useState("");
   const [projectDesc, setprojectDesc] = useState("");
   const [projectDemoUrl, setProjectDemoUrl] = useState("");
-  const [projectLiveSiteUrl, setProjectLiveSiteUrl] = useState("");
+  const [projectCodeUrl, setProjectCodeUrl] = useState("");
   const [projectImage, setProjectImage] = useState(false);
   const [animateTitle, setAnimateTitle] = useState(false);
   const [animateprojectDesc, setAnimateProjectDesc] = useState(false);
@@ -36,7 +36,7 @@ export default function Slider({ projects }: ImageSliderProps) {
         setImageName(i.name);
         setprojectDesc(i.desc);
         setProjectDemoUrl(i.demoUrl);
-        setProjectLiveSiteUrl(i.liveSiteUrl);
+        setProjectCodeUrl(i.projectCode);
         setAnimateTitle(true);
         setAnimateProjectDesc(true);
         setIsLoading(true);
@@ -130,8 +130,8 @@ export default function Slider({ projects }: ImageSliderProps) {
           {isLoading ? <ClipLoader color="#ffffff" /> : "View Demo"}
         </a>
         <br />
-        <a href={projectLiveSiteUrl} target="_blank" rel="noopener noreferrer">
-          {isLoading ? <ClipLoader color="#ffffff" /> : "View Live Site"}
+        <a href={projectCodeUrl} target="_blank" rel="noopener noreferrer">
+          {isLoading ? <ClipLoader color="#ffffff" /> : "View Code"}
         </a>
       </div>
     </div>

@@ -46,7 +46,7 @@ export default function Home() {
       url: img1,
       alt: "Image1",
       demoUrl: "no",
-      liveSiteUrl: "no",
+      projectCode: "https://github.com/SimeonNedyalkov/Cat-Date-Angular",
     },
     {
       name: "Choose Your Figher",
@@ -54,7 +54,8 @@ export default function Home() {
       url: img2,
       alt: "Image2",
       demoUrl: "no",
-      liveSiteUrl: "no",
+      projectCode:
+        "https://github.com/SimeonNedyalkov/Choose-Your-Figher-React",
     },
     {
       name: "Magma Heaven",
@@ -62,7 +63,7 @@ export default function Home() {
       url: img3,
       alt: "Image3",
       demoUrl: "no",
-      liveSiteUrl: "no",
+      projectCode: "https://github.com/SimeonNedyalkov/02.MagmaHeaven",
     },
     {
       name: "Earth Treasure Vault",
@@ -70,7 +71,7 @@ export default function Home() {
       url: img4,
       alt: "Image4",
       demoUrl: "no",
-      liveSiteUrl: "no",
+      projectCode: "https://github.com/SimeonNedyalkov/01.EarthTreasureVault",
     },
     {
       name: "Movie Magic",
@@ -78,7 +79,7 @@ export default function Home() {
       url: img5,
       alt: "Image5",
       demoUrl: "no",
-      liveSiteUrl: "no",
+      projectCode: "no",
     },
   ];
   const arrayOfContactIcons = [
