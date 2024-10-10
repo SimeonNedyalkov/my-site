@@ -19,15 +19,23 @@ export default function Home() {
   const isVisible = useOnScreen(ref);
   const [onFirstCheck, isOnFirstCheck] = useState(false);
   const [loadIcos, isLoadIcos] = useState(false);
+  const [showOneByOne, isShownOneByOne] = useState<number>(0);
   useEffect(() => {
     if (isVisible && !onFirstCheck) {
       isOnFirstCheck(true);
     }
   }, [isVisible, onFirstCheck]);
   useEffect(() => {
-    setTimeout(() => {
+    const startLoadingIcons = setTimeout(() => {
+      arrayOfContactIcons.forEach((_, index) => {
+        setTimeout(() => {
+          isShownOneByOne((prev) => prev + 1);
+        }, index * 1000);
+      });
       isLoadIcos(true);
     }, 3000);
+
+    return () => clearTimeout(startLoadingIcons);
   }, []);
 
   const arrayOfImages = [
@@ -60,7 +68,7 @@ export default function Home() {
         <div className="vertical-icons">
           <div className="v-line"></div>
           {loadIcos &&
-            arrayOfContactIcons.map((i) => (
+            arrayOfContactIcons.slice(0, showOneByOne).map((i) => (
               <a key={i.ico} href={i.href} target="_blank">
                 <img src={i.ico} alt={i.alt} className="icons" />
               </a>
