@@ -13,6 +13,7 @@ import picture from "../assets/me/received_737729346932518.jpeg";
 import { useEffect, useRef, useState } from "react";
 import useOnScreen from "../hooks/targetElement";
 import Skills from "./Skills";
+import WorkExperience from "./WorkExperience";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement>(null);
@@ -107,6 +108,9 @@ export default function Home() {
         className={onFirstCheck ? "dynamicBackground1 text-7xl" : "text-7xl"}
       >
         <Skills></Skills>
+      </section>
+      <section id="work">
+        <WorkExperience />
       </section>
     </div>
   );
