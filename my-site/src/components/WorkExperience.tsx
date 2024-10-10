@@ -1,3 +1,3 @@
 export default function WorkExperience() {
-  return <div>Hello</div>;
+  return <div className="workContainer">Hello</div>;
 }
