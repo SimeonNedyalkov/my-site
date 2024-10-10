@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
+import { ClipLoader, FadeLoader } from "react-spinners";
 
 type ImageSliderProps = {
   projects: {
@@ -20,6 +21,7 @@ export default function Slider({ projects }: ImageSliderProps) {
   const [projectLiveSiteUrl, setProjectLiveSiteUrl] = useState("");
   const [animateTitle, setAnimateTitle] = useState(false);
   const [animateprojectDesc, setAnimateProjectDesc] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndex((index) => (index === projects.length - 1 ? 0 : index + 1));
@@ -36,9 +38,11 @@ export default function Slider({ projects }: ImageSliderProps) {
         setProjectLiveSiteUrl(i.liveSiteUrl);
         setAnimateTitle(true);
         setAnimateProjectDesc(true);
+        setIsLoading(true);
         setTimeout(() => {
           setAnimateTitle(false);
           setAnimateProjectDesc(false);
+          setIsLoading(false);
         }, 2100);
       }
     });
@@ -116,11 +120,11 @@ export default function Slider({ projects }: ImageSliderProps) {
 
       <div className="contentSide">
         <a href={projectDemoUrl} target="_blank" rel="noopener noreferrer">
-          View Demo
+          {isLoading ? <ClipLoader color="#ffffff" /> : "View Demo"}
         </a>
         <br />
         <a href={projectLiveSiteUrl} target="_blank" rel="noopener noreferrer">
-          View Live Site
+          {isLoading ? <ClipLoader color="#ffffff" /> : "View Live Site"}
         </a>
       </div>
     </div>

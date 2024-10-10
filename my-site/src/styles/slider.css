@@ -115,6 +115,9 @@
 .contentSide a {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
