@@ -19,6 +19,7 @@ export default function Slider({ projects }: ImageSliderProps) {
   const [projectDesc, setprojectDesc] = useState("");
   const [projectDemoUrl, setProjectDemoUrl] = useState("");
   const [projectLiveSiteUrl, setProjectLiveSiteUrl] = useState("");
+  const [projectImage, setProjectImage] = useState(false);
   const [animateTitle, setAnimateTitle] = useState(false);
   const [animateprojectDesc, setAnimateProjectDesc] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -39,10 +40,12 @@ export default function Slider({ projects }: ImageSliderProps) {
         setAnimateTitle(true);
         setAnimateProjectDesc(true);
         setIsLoading(true);
+        setProjectImage(true);
         setTimeout(() => {
           setAnimateTitle(false);
           setAnimateProjectDesc(false);
           setIsLoading(false);
+          setProjectImage(false);
         }, 2100);
       }
     });
@@ -78,7 +81,11 @@ export default function Slider({ projects }: ImageSliderProps) {
               key={url}
               alt={alt}
               src={url}
-              className="img-slider-img"
+              className={
+                projectImage
+                  ? "imageAnimation img-slider-img"
+                  : "img-slider-img"
+              }
               style={{ translate: `${-100 * imageIndex}%` }}
               aria-hidden={imageIndex !== index}
             />
