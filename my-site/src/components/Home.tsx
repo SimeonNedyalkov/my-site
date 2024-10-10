@@ -79,7 +79,7 @@ export default function Home() {
       url: img5,
       alt: "Image5",
       demoUrl: "no",
-      projectCode: "no",
+      projectCode: "https://github.com/SimeonNedyalkov/movie-magic",
     },
   ];
   const arrayOfContactIcons = [

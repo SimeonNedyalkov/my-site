@@ -26,7 +26,7 @@ export default function Slider({ projects }: ImageSliderProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndex((index) => (index === projects.length - 1 ? 0 : index + 1));
-    }, 10000);
+    }, 13000);
     return () => clearInterval(interval);
   }, [projects.length, imageIndex]);
 
