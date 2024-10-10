@@ -13,7 +13,7 @@ import picture from "../assets/me/received_737729346932518.jpeg";
 import { useEffect, useRef, useState } from "react";
 import useOnScreen from "../hooks/targetElement";
 import Skills from "./Skills";
-import WorkExperience from "./WorkExperience";
+import Education from "./Education";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement>(null);
@@ -109,8 +109,8 @@ export default function Home() {
       >
         <Skills></Skills>
       </section>
-      <section id="work">
-        <WorkExperience />
+      <section id="education">
+        <Education />
       </section>
     </div>
   );
