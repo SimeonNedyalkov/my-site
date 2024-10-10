@@ -24,6 +24,11 @@ export default function Home() {
       isOnFirstCheck(true);
     }
   }, [isVisible, onFirstCheck]);
+  useEffect(() => {
+    setTimeout(() => {
+      isLoadIcos(true);
+    }, 3000);
+  }, []);
 
   const arrayOfImages = [
     { url: img1, alt: "Image1" },
@@ -33,24 +38,33 @@ export default function Home() {
     { url: img5, alt: "Image5" },
   ];
   const arrayOfContactIcons = [
-    { githubIco: githubIco, alt: "github" },
-    { linedInIco: linedInIco, alt: "linkedIn" },
-    { facebookIco: facebookIco, alt: "facebook" },
+    {
+      ico: githubIco,
+      alt: "github",
+      href: "https://github.com/SimeonNedyalkov/",
+    },
+    {
+      ico: linedInIco,
+      alt: "linkedIn",
+      href: "https://www.linkedin.com/in/simeon-nedyalkov-3a62b616a/",
+    },
+    {
+      ico: facebookIco,
+      alt: "facebook",
+      href: "https://www.facebook.com/profile.php?id=100001718120923",
+    },
   ];
   return (
     <div id="home" className="homeAll mt-30 antialiased">
       <div className="homeContainer">
         <div className="vertical-icons">
           <div className="v-line"></div>
-          <a href="https://github.com/SimeonNedyalkov/">
-            <img src={githubIco} alt="github" width={25} height={25} />
-          </a>
-          <a href="https://www.linkedin.com/in/simeon-nedyalkov-3a62b616a/">
-            <img src={linedInIco} width={25} height={25} alt="email" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100001718120923">
-            <img src={facebookIco} alt="discord" width={25} height={25} />
-          </a>
+          {loadIcos &&
+            arrayOfContactIcons.map((i) => (
+              <a key={i.ico} href={i.href} target="_blank">
+                <img src={i.ico} alt={i.alt} className="icons" />
+              </a>
+            ))}
         </div>
 
         <div className="homeText">
