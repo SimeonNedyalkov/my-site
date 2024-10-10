@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   margin: 32px 32px;
+  height: 100vh;
 }
 #bio p {
   font-size: 20px;
