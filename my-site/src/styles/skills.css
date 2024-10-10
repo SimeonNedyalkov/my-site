@@ -1,3 +1,6 @@
 #skills {
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 32px 32px;
+  height: 120vh;
 }

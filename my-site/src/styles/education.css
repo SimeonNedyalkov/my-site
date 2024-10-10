@@ -4,3 +4,61 @@
   margin: 32px 32px;
   height: 100vh;
 }
+.educationContainer {
+  margin: 180px;
+}
+.educationTitle h1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0;
+  font-size: 48px;
+  margin: 32px 0;
+  animation: slideInTop 1s ease-out;
+}
+.educationContainer h2 {
+  display: flex;
+  text-align: left;
+  flex: 0 0;
+  font-size: 24px;
+  margin: 6px 0;
+  animation: fadeIn 2s ease-in;
+}
+.educationContainer h3 {
+  display: flex;
+  text-align: left;
+  flex: 0 0;
+  font-size: 18px;
+  margin: 2px 0;
+  color: gray;
+  animation: fadeIn 2s ease-in;
+}
+.educationContainer p {
+  display: flex;
+  font-size: 16px;
+  color: rgb(229, 231, 235);
+  text-align: left;
+  margin-top: 30px;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
