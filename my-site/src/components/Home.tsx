@@ -66,7 +66,7 @@ export default function Home() {
     },
     {
       name: "Earth Treasure Vault",
-      desc: "App made on NodeJs with express,mongoose,cookie-parser,jsonwebtoken,handlebars,bcypt,express-validators",
+      desc: "App made on NodeJs with express, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt and express-validators",
       url: img4,
       alt: "Image4",
       demoUrl: "no",

@@ -16,6 +16,8 @@ export default function Slider({ projects }: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [imageName, setImageName] = useState("");
   const [projectDesc, setprojectDesc] = useState("");
+  const [projectDemoUrl, setProjectDemoUrl] = useState("");
+  const [projectLiveSiteUrl, setProjectLiveSiteUrl] = useState("");
   const [animateTitle, setAnimateTitle] = useState(false);
   const [animateprojectDesc, setAnimateProjectDesc] = useState(false);
   useEffect(() => {
@@ -30,6 +32,8 @@ export default function Slider({ projects }: ImageSliderProps) {
       if (index === imageIndex) {
         setImageName(i.name);
         setprojectDesc(i.desc);
+        setProjectDemoUrl(i.demoUrl);
+        setProjectLiveSiteUrl(i.liveSiteUrl);
         setAnimateTitle(true);
         setAnimateProjectDesc(true);
         setTimeout(() => {
@@ -51,7 +55,16 @@ export default function Slider({ projects }: ImageSliderProps) {
   return (
     <div className="sliderWrapper">
       <div className="contentSide">
-        <h2 className={animateTitle ? "projectTitle" : ""}>{imageName}</h2>
+        <h2 className={animateTitle ? "projectTitle mb-2" : "mb-2"}>
+          {imageName}
+        </h2>
+        <div
+          className={
+            animateTitle
+              ? "projectLine border-b border-stone-50/30"
+              : "border-b border-stone-50/30"
+          }
+        ></div>
         <p className={animateprojectDesc ? "projectDesc" : ""}>{projectDesc}</p>
       </div>
       <div className="sliderContainer">
@@ -102,8 +115,13 @@ export default function Slider({ projects }: ImageSliderProps) {
       </div>
 
       <div className="contentSide">
-        <h2>Another Title</h2>
-        <p>Additional content can go here.</p>
+        <a href={projectDemoUrl} target="_blank" rel="noopener noreferrer">
+          View Demo
+        </a>
+        <br />
+        <a href={projectLiveSiteUrl} target="_blank" rel="noopener noreferrer">
+          View Live Site
+        </a>
       </div>
     </div>
   );
