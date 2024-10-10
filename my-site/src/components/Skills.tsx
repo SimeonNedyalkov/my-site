@@ -54,7 +54,10 @@ export default function Skills() {
           <div className="px-6 text-lg lg:text-2xl">Languages</div>
           {skills.map((i) =>
             i.languages.map((l) => (
-              <div className="py-6 flex items-center justify-between border-b border-stone-50/30">
+              <div
+                key={l.language}
+                className="py-6 flex items-center justify-between border-b border-stone-50/30"
+              >
                 <div className="flex items-center">
                   <img src={`${l.svg}`} alt="Icon" width="50" height="50" />
 
@@ -71,7 +74,10 @@ export default function Skills() {
           <div className="px-6 text-lg lg:text-2xl">Frameworks</div>
           {skills.map((i) =>
             i.frameworks.map((l) => (
-              <div className="py-6 flex items-center justify-between border-b border-stone-50/30">
+              <div
+                key={l.framework}
+                className="py-6 flex items-center justify-between border-b border-stone-50/30"
+              >
                 <div className="flex items-center">
                   <img src={`${l.svg}`} alt="Icon" width="50" height="50" />
 
@@ -88,7 +94,10 @@ export default function Skills() {
           <div className="px-6 text-lg lg:text-2xl">Tools</div>
           {skills.map((i) =>
             i.tools.map((l) => (
-              <div className="py-6 flex items-center justify-between border-b border-stone-50/30">
+              <div
+                key={l.tool}
+                className="py-6 flex items-center justify-between border-b border-stone-50/30"
+              >
                 <div className="flex items-center">
                   <img src={`${l.svg}`} alt="Icon" width="50" height="50" />
 
@@ -106,7 +115,10 @@ export default function Skills() {
         <div className="px-6 text-lg lg:text-2xl">DataBases</div>
         {skills.map((i) =>
           i.databases.map((l) => (
-            <div className="py-6 flex items-center justify-between border-b border-stone-50/30">
+            <div
+              key={l.database}
+              className="py-6 flex items-center justify-between border-b border-stone-50/30"
+            >
               <div className="flex items-center">
                 <img src={`${l.svg}`} alt="Icon" width="50" height="50" />
 
