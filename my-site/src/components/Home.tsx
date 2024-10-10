@@ -5,6 +5,7 @@ import img4 from "../assets/projects/Screenshot 2024-09-05 212729.png";
 import img5 from "../assets/projects/Screenshot 2024-09-05 212941.png";
 import githubIco from "../assets/contact-icons/github-svgrepo-com.svg";
 import linedInIco from "../assets/contact-icons/linkedin-svgrepo-com.svg";
+import facebookIco from "../assets/contact-icons/facebook-boxed-svgrepo-com.svg";
 import Bio from "./Bio";
 import Code from "./Code";
 import Slider from "./Slider";
@@ -17,6 +18,7 @@ export default function Home() {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref);
   const [onFirstCheck, isOnFirstCheck] = useState(false);
+  const [loadIcos, isLoadIcos] = useState(false);
   useEffect(() => {
     if (isVisible && !onFirstCheck) {
       isOnFirstCheck(true);
@@ -30,19 +32,24 @@ export default function Home() {
     { url: img4, alt: "Image4" },
     { url: img5, alt: "Image5" },
   ];
+  const arrayOfContactIcons = [
+    { githubIco: githubIco, alt: "github" },
+    { linedInIco: linedInIco, alt: "linkedIn" },
+    { facebookIco: facebookIco, alt: "facebook" },
+  ];
   return (
     <div id="home" className="homeAll mt-30 antialiased">
       <div className="homeContainer">
         <div className="vertical-icons">
           <div className="v-line"></div>
-          <a href="https://github.com/Konstantin-Kostov-70">
-            <img src={githubIco} alt="github" width={30} height={30} />
+          <a href="https://github.com/SimeonNedyalkov/">
+            <img src={githubIco} alt="github" width={25} height={25} />
           </a>
-          <a href="https://www.linkedin.com/in/konstantin-kostov-349879286/">
-            <img src={linedInIco} width={30} height={30} alt="email" />
+          <a href="https://www.linkedin.com/in/simeon-nedyalkov-3a62b616a/">
+            <img src={linedInIco} width={25} height={25} alt="email" />
           </a>
-          <a href="https://res.cloudinary.com/dh7fk1gjf/image/upload/v1727587443/syv2hwfbwouqmsngac0q.png">
-            <img src="/images/svg-icons/Discord.svg" alt="discord" />
+          <a href="https://www.facebook.com/profile.php?id=100001718120923">
+            <img src={facebookIco} alt="discord" width={25} height={25} />
           </a>
         </div>
 
