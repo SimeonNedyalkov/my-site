@@ -39,12 +39,47 @@ export default function Home() {
     return () => clearTimeout(startLoadingIcons);
   }, []);
 
-  const arrayOfImages = [
-    { url: img1, alt: "Image1" },
-    { url: img2, alt: "Image2" },
-    { url: img3, alt: "Image3" },
-    { url: img4, alt: "Image4" },
-    { url: img5, alt: "Image5" },
+  const arrayOfProjects = [
+    {
+      name: "Cat Date",
+      desc: "Cat-Date is a fun and interactive Angular-based application, inspired by Tinder, designed exclusively for connecting cats and their owners. Swipe right to find the perfect playmate for your feline friend, schedule playdates, and join a community of cat enthusiasts!",
+      url: img1,
+      alt: "Image1",
+      demoUrl: "no",
+      liveSiteUrl: "no",
+    },
+    {
+      name: "Choose Your Figher",
+      desc: '" Choose Your Fighter " is a React project where users pick characters like bears, sharks, octopuses, and eagles to battle against the app itself. It demonstrates React skills, interactive UI design, state management, and game logic implementation for an engaging gaming experience.',
+      url: img2,
+      alt: "Image2",
+      demoUrl: "no",
+      liveSiteUrl: "no",
+    },
+    {
+      name: "Magma Heaven",
+      desc: "App made with Node.js, Express.js, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt, express-validators.",
+      url: img3,
+      alt: "Image3",
+      demoUrl: "no",
+      liveSiteUrl: "no",
+    },
+    {
+      name: "Earth Treasure Vault",
+      desc: "App made on NodeJs with express,mongoose,cookie-parser,jsonwebtoken,handlebars,bcypt,express-validators",
+      url: img4,
+      alt: "Image4",
+      demoUrl: "no",
+      liveSiteUrl: "no",
+    },
+    {
+      name: "Movie Magic",
+      desc: "App made with Node.js, Express.js, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt, express-validators.",
+      url: img5,
+      alt: "Image5",
+      demoUrl: "no",
+      liveSiteUrl: "no",
+    },
   ];
   const arrayOfContactIcons = [
     {
@@ -91,7 +126,7 @@ export default function Home() {
 
       {/* Attach ref to the section you want to observe */}
       <section id="projects">
-        <Slider images={arrayOfImages}></Slider>
+        <Slider projects={arrayOfProjects}></Slider>
       </section>
 
       <section id="bio">
