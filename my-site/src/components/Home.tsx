@@ -45,7 +45,8 @@ export default function Home() {
       desc: "Cat-Date is a fun and interactive Angular-based application, inspired by Tinder, designed exclusively for connecting cats and their owners. Swipe right to find the perfect playmate for your feline friend, schedule playdates, and join a community of cat enthusiasts!",
       url: img1,
       alt: "Image1",
-      demoUrl: "no",
+      demoUrl:
+        "https://cat-date-client-rjvqbqxmb-simeonnedyalkovs-projects.vercel.app/",
       projectCode: "https://github.com/SimeonNedyalkov/Cat-Date-Angular",
     },
     {
