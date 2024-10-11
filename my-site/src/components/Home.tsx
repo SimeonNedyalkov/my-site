@@ -42,7 +42,7 @@ export default function Home() {
   const arrayOfProjects = [
     {
       name: "Cat Date",
-      desc: "Cat-Date is a fun and interactive Angular-based application, inspired by Tinder, designed exclusively for connecting cats and their owners. Swipe right to find the perfect playmate for your feline friend, schedule playdates, and join a community of cat enthusiasts!",
+      desc: '" Cat-Date " is a fun and interactive Angular-based application, inspired by Tinder, designed exclusively for connecting cats and their owners. Swipe right to find the perfect playmate for your feline friend, schedule playdates, and join a community of cat enthusiasts!',
       url: img1,
       alt: "Image1",
       demoUrl:
@@ -60,7 +60,7 @@ export default function Home() {
     },
     {
       name: "Magma Heaven",
-      desc: "App made with Node.js, Express.js, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt, express-validators.",
+      desc: '" Magma Heaven " is an app made with Node.js, Express.js, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt, express-validators.',
       url: img3,
       alt: "Image3",
       demoUrl: "no",
@@ -68,7 +68,7 @@ export default function Home() {
     },
     {
       name: "Earth Treasure Vault",
-      desc: "App made on NodeJs with express, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt and express-validators",
+      desc: '" Earth Treasure Vault " is an app made on NodeJs with express, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt and express-validators',
       url: img4,
       alt: "Image4",
       demoUrl: "no",
@@ -76,7 +76,7 @@ export default function Home() {
     },
     {
       name: "Movie Magic",
-      desc: "App made with Node.js, Express.js, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt, express-validators.",
+      desc: '" Movie Magic " is an app made with Node.js, Express.js, mongoose, cookie-parser, jsonwebtoken, handlebars, bcypt, express-validators.',
       url: img5,
       alt: "Image5",
       demoUrl: "no",
