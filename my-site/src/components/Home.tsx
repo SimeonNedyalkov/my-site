@@ -53,7 +53,7 @@ export default function Home() {
       desc: '" Choose Your Fighter " is a React project where users pick characters like bears, sharks, octopuses, and eagles to battle against the app itself. It demonstrates React skills, interactive UI design, state management, and game logic implementation for an engaging gaming experience.',
       url: img2,
       alt: "Image2",
-      demoUrl: "no",
+      demoUrl: "https://choose-your-fighter-client.vercel.app/",
       projectCode:
         "https://github.com/SimeonNedyalkov/Choose-Your-Figher-React",
     },

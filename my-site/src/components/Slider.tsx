@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
-import { ClipLoader, FadeLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 
 type ImageSliderProps = {
   projects: {
