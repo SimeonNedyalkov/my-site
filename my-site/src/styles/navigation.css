@@ -1,2 +1,32 @@
 .navAll {
 }
+@media (max-width: 600px) {
+  .navbar1 {
+    position: fixed;
+    max-width: 400px;
+    align-items: end;
+    justify-content: end;
+    background-color: transparent;
+    align-items: end;
+    width: 300px;
+    left: 100px;
+  }
+  .logoForMobile {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .logoForMobile1 {
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    margin: 0;
+  }
+  .logoForMobile2 {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    margin: 0;
+    padding: 0;
+  }
+}

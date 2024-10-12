@@ -15,7 +15,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <nav className="fixed left-0 right-0 top-4 z-50">
+      <nav className="navbar1 fixed left-0 right-0 top-4 z-50">
         {/* Desktop Navbar */}
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex items-center justify-between gap-6">
@@ -100,13 +100,23 @@ export default function Navigation() {
         {/* Mobile Navbar */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
-            <div>
+            <div className="logoForMobile">
               <a href="#">
                 <img
-                  src="/assets/logo-CVscTaAv.png"
+                  src={logo}
                   alt="logo"
-                  width="25"
-                  className="m-2"
+                  width="70"
+                  height="70"
+                  className="logoForMobile1 m-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src={logo2}
+                  alt="logo"
+                  width="70"
+                  height="70"
+                  className="logoForMobile2 m-2"
                 />
               </a>
             </div>
