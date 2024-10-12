@@ -135,7 +135,6 @@
 }
 @media (max-width: 600px) {
   .homeContainer {
-    color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,5 +149,13 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+  }
+  .homeText {
+    font-size: 14px;
+    max-width: 300px;
+    max-height: 600px;
+    margin-top: 600px;
+    width: 100vh;
+    height: 100vh;
   }
 }

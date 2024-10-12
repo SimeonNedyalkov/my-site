@@ -1,11 +1,22 @@
-import "../styles/navigation.css";
+import "../styles/navigation.css"; // Ensure styles are correctly linked
 import logo from "../assets/logo/S1_transparent-.png";
 import logo2 from "../assets/logo/N_transparent-.png";
 import { Link } from "react-scroll";
+import { useState } from "react"; // Import useState for managing mobile menu state
+
 export default function Navigation() {
+  // State to manage mobile menu visibility
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Function to toggle the mobile menu
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div>
       <nav className="fixed left-0 right-0 top-4 z-50">
+        {/* Desktop Navbar */}
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex items-center justify-between gap-6">
             <div>
@@ -18,14 +29,14 @@ export default function Navigation() {
                 duration={500}
               >
                 <img
-                  src={`${logo}`}
-                  className="position: absolute left-3"
+                  src={logo}
+                  className="absolute left-3"
                   width="100"
                   alt="logo"
                 />
                 <img
-                  src={`${logo2}`}
-                  className="position: absolute left-6"
+                  src={logo2}
+                  className="absolute left-6"
                   width="100"
                   alt="logo"
                 />
@@ -85,7 +96,9 @@ export default function Navigation() {
             </div>
           </div>
         </div>
-        <div className="rounded-lg backdrop-blur-md lg:hidden ">
+
+        {/* Mobile Navbar */}
+        <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
@@ -98,7 +111,7 @@ export default function Navigation() {
               </a>
             </div>
             <div className="flex items-center">
-              <button className="focus:outline-none lg:hidden">
+              <button className="focus:outline-none" onClick={toggleMenu}>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -114,6 +127,61 @@ export default function Navigation() {
               </button>
             </div>
           </div>
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="flex flex-col items-center">
+              <ul className="flex flex-col items-center gap-4 py-2">
+                <li>
+                  <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="text-sm hover:text-green-400 cursor-pointer"
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-sm hover:text-green-400 cursor-pointer"
+                    to="bio"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Bio
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-sm hover:text-green-400 cursor-pointer"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Skills
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-sm hover:text-green-400 cursor-pointer"
+                    to="education"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Education
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </nav>
     </div>
