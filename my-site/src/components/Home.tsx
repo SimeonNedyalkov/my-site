@@ -5,7 +5,8 @@ import img4 from "../assets/projects/Screenshot 2024-09-05 212729.png";
 import img5 from "../assets/projects/Screenshot 2024-09-05 212941.png";
 import githubIco from "../assets/contact-icons/github-svgrepo-com.svg";
 import linedInIco from "../assets/contact-icons/linkedin-svgrepo-com.svg";
-import facebookIco from "../assets/contact-icons/facebook-boxed-svgrepo-com.svg";
+import outlook from "../assets/contact-icons/mail-svgrepo-com.svg";
+import facebook from "../assets/contact-icons/facebook-svgrepo-com.svg";
 import Bio from "./Bio";
 import Code from "./Code";
 import Slider from "./Slider";
@@ -85,6 +86,11 @@ export default function Home() {
   ];
   const arrayOfContactIcons = [
     {
+      ico: facebook,
+      alt: "facebook",
+      href: "https://www.facebook.com/profile.php?id=100001718120923",
+    },
+    {
       ico: githubIco,
       alt: "github",
       href: "https://github.com/SimeonNedyalkov/",
@@ -95,9 +101,9 @@ export default function Home() {
       href: "https://www.linkedin.com/in/simeon-nedyalkov-3a62b616a/",
     },
     {
-      ico: facebookIco,
-      alt: "facebook",
-      href: "https://www.facebook.com/profile.php?id=100001718120923",
+      ico: outlook,
+      alt: "outlook",
+      href: "mailto:simeon.nedyalkovv@gmail.com",
     },
   ];
   return (
