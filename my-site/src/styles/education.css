@@ -63,3 +63,12 @@
     opacity: 1;
   }
 }
+@media (max-width: 600px) {
+  #education {
+    display: flex;
+    flex-direction: column;
+    margin-top: 900px;
+    height: 140vh;
+    max-width: 300px;
+  }
+}
