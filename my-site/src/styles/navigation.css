@@ -1,15 +1,16 @@
 .navAll {
 }
 @media (max-width: 600px) {
-  .navbar1 {
+  .navbar2 {
     position: fixed;
     max-width: 400px;
-    align-items: end;
-    justify-content: end;
+
     background-color: transparent;
-    align-items: end;
-    width: 300px;
-    left: 70px;
+
+    width: 400px;
+    left: 0;
+    right: 0;
+    top: 4px;
   }
   .logoForMobile {
     display: flex;

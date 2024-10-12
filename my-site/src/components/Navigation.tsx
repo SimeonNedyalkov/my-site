@@ -98,7 +98,7 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Navbar */}
-        <div className="rounded-lg backdrop-blur-md lg:hidden">
+        <div className="navbar2 fixed rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div className="logoForMobile">
               <a href="#">
