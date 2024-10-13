@@ -37,6 +37,8 @@
     justify-content: center;
     font-size: 2rem;
     padding-bottom: 2rem;
+    height: auto;
+    width: auto;
   }
   .skillsAll {
     gap: 1rem;
