@@ -60,80 +60,85 @@ export default function Slider({ projects }: ImageSliderProps) {
   }
 
   return (
-    <div className="sliderWrapper">
-      <div className="contentSide">
-        <h2 className={animateTitle ? "projectTitle mb-2" : "mb-2"}>
-          {imageName}
-        </h2>
-        <div
-          className={
-            animateTitle
-              ? "projectLine border-b border-stone-50/30"
-              : "border-b border-stone-50/30"
-          }
-        ></div>
-        <p className={animateprojectDesc ? "projectDesc" : ""}>{projectDesc}</p>
-      </div>
-      <div className="sliderContainer">
-        <div style={{ overflow: "hidden", display: "flex" }}>
-          {projects.map(({ url, alt }, index) => (
-            <img
-              key={url}
-              alt={alt}
-              src={url}
-              className={
-                projectImage
-                  ? "imageAnimation img-slider-img"
-                  : "img-slider-img"
-              }
-              style={{ translate: `${-100 * imageIndex}%` }}
-              aria-hidden={imageIndex !== index}
-            />
-          ))}
+    <>
+      <h1>Projects</h1>
+      <div className="sliderWrapper">
+        <div className="contentSide">
+          <h2 className={animateTitle ? "projectTitle mb-2" : "mb-2"}>
+            {imageName}
+          </h2>
+          <div
+            className={
+              animateTitle
+                ? "projectLine border-b border-stone-50/30"
+                : "border-b border-stone-50/30"
+            }
+          ></div>
+          <p className={animateprojectDesc ? "projectDesc" : ""}>
+            {projectDesc}
+          </p>
+        </div>
+        <div className="sliderContainer">
+          <div style={{ overflow: "hidden", display: "flex" }}>
+            {projects.map(({ url, alt }, index) => (
+              <img
+                key={url}
+                alt={alt}
+                src={url}
+                className={
+                  projectImage
+                    ? "imageAnimation img-slider-img"
+                    : "img-slider-img"
+                }
+                style={{ translate: `${-100 * imageIndex}%` }}
+                aria-hidden={imageIndex !== index}
+              />
+            ))}
+          </div>
+
+          <button
+            className="img-slider-button prev-button"
+            onClick={previousImage}
+            aria-label="viewPreviousImage"
+          >
+            <ArrowBigLeft aria-hidden />
+          </button>
+          <button
+            className="img-slider-button next-button"
+            onClick={nextImage}
+            aria-label="viewNextImage"
+          >
+            <ArrowBigRight aria-hidden />
+          </button>
+
+          <div className="img-dot-container">
+            {projects.map((_, index) => (
+              <button
+                key={index}
+                className="img-dot-buttons"
+                onClick={() => setImageIndex(index)}
+                aria-label={`viewImage ${index}`}
+              >
+                {index === imageIndex ? (
+                  <CircleDot aria-hidden className="ifDot" />
+                ) : (
+                  <Circle aria-hidden />
+                )}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <button
-          className="img-slider-button prev-button"
-          onClick={previousImage}
-          aria-label="viewPreviousImage"
-        >
-          <ArrowBigLeft aria-hidden />
-        </button>
-        <button
-          className="img-slider-button next-button"
-          onClick={nextImage}
-          aria-label="viewNextImage"
-        >
-          <ArrowBigRight aria-hidden />
-        </button>
-
-        <div className="img-dot-container">
-          {projects.map((_, index) => (
-            <button
-              key={index}
-              className="img-dot-buttons"
-              onClick={() => setImageIndex(index)}
-              aria-label={`viewImage ${index}`}
-            >
-              {index === imageIndex ? (
-                <CircleDot aria-hidden className="ifDot" />
-              ) : (
-                <Circle aria-hidden />
-              )}
-            </button>
-          ))}
+        <div className="contentSide">
+          <a href={projectDemoUrl} target="_blank" rel="noopener noreferrer">
+            {isLoading ? <ClipLoader color="#ffffff" /> : "View Demo"}
+          </a>
+          <br />
+          <a href={projectCodeUrl} target="_blank" rel="noopener noreferrer">
+            {isLoading ? <ClipLoader color="#ffffff" /> : "View Code"}
+          </a>
         </div>
       </div>
-
-      <div className="contentSide">
-        <a href={projectDemoUrl} target="_blank" rel="noopener noreferrer">
-          {isLoading ? <ClipLoader color="#ffffff" /> : "View Demo"}
-        </a>
-        <br />
-        <a href={projectCodeUrl} target="_blank" rel="noopener noreferrer">
-          {isLoading ? <ClipLoader color="#ffffff" /> : "View Code"}
-        </a>
-      </div>
-    </div>
+    </>
   );
 }

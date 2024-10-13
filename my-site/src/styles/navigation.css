@@ -3,11 +3,11 @@
 @media (max-width: 600px) {
   .navbar2 {
     position: fixed;
-    max-width: 400px;
-
+    max-width: 100%;
+    align-items: center;
     background-color: transparent;
 
-    width: 400px;
+    width: 100%;
     left: 0;
     right: 0;
     top: 4px;

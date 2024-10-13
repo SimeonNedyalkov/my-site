@@ -2,27 +2,60 @@
   display: flex;
   align-items: center;
   margin: 32px 32px;
-  height: 120vh;
+  height: auto;
+}
+
+.skillsAll {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Space between sections */
+}
+.skillsAll2 {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Add slight background color for visibility */
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%; /* Adjust width for all screen sizes */
+}
+.skillsAll2 h3 {
+  font-size: 1.5rem; /* Adapt the size for better readability */
+}
+
+.skillsAll2 img {
+  margin-right: 10px; /* Space between the image and text */
 }
 @media (max-width: 600px) {
+  .skillsForMobile {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
   .skillsAll {
-    display: flex;
-    flex-direction: column;
-    max-width: 100px;
-    font-size: 14px;
-    margin-top: 600px;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-size: 0.875rem; /* Reduce font size for small screens */
   }
+
   .skillsAll1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 100px;
-    font-size: 10px;
-    margin-top: 600px;
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 1rem;
   }
+
   .skillsAll2 {
-    width: 300px;
-    position: relative;
-    left: -100px;
-    font-size: 18px;
+    padding: 1rem;
+    width: 100%; /* Full width for better fit on mobile */
+  }
+
+  .skillsAll2 h3 {
+    font-size: 1rem;
+  }
+
+  .skillsAll2 img {
+    width: 30px; /* Smaller icons for mobile */
+    height: 30px;
   }
 }

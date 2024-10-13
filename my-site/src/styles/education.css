@@ -4,46 +4,50 @@
   margin: 32px 32px;
   height: 100vh;
 }
+
 .educationContainer {
   margin: 180px;
+  max-width: 800px; /* Limit the max-width for better readability */
 }
+
 .educationTitle h1 {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  flex: 0 0;
   font-size: 48px;
   margin: 32px 0;
 }
+
 .educationContainer h2 {
-  display: flex;
   text-align: left;
-  flex: 0 0;
   font-size: 24px;
   margin: 6px 0;
 }
+
 .educationContainer h3 {
-  display: flex;
   text-align: left;
-  flex: 0 0;
   font-size: 18px;
   margin: 2px 0;
   color: gray;
 }
+
 .educationContainer p {
-  display: flex;
   font-size: 16px;
   color: rgb(229, 231, 235);
   text-align: left;
   margin-top: 30px;
+  line-height: 1.6; /* Improve readability by increasing line height */
 }
+
 .fadeInScreen {
   animation: fadeIn 2s ease-in;
 }
+
 .slideInTop {
   animation: slideInTop 1s ease-out;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -63,12 +67,36 @@
     opacity: 1;
   }
 }
+
+/* Media Query for mobile responsiveness */
 @media (max-width: 600px) {
   #education {
     display: flex;
     flex-direction: column;
-    margin-top: 900px;
-    height: 140vh;
-    max-width: 300px;
+    margin-top: 60px; /* Adjust margin for mobile */
+    height: auto;
+    max-width: 100%; /* Ensure full width on small screens */
+  }
+
+  .educationContainer {
+    margin: 20px;
+  }
+
+  .educationTitle h1 {
+    font-size: 32px; /* Decrease font size for smaller screens */
+    margin: 16px 0;
+  }
+
+  .educationContainer h2 {
+    font-size: 20px; /* Slightly smaller h2 for mobile */
+  }
+
+  .educationContainer h3 {
+    font-size: 16px;
+  }
+
+  .educationContainer p {
+    font-size: 14px; /* Smaller font for mobile readability */
+    margin-top: 20px;
   }
 }

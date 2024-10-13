@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import useOnScreen from "../hooks/targetElement";
+import softuniLogo from "../assets/softuni/R.png";
 
 export default function Education() {
   const refTitle = useRef<HTMLDivElement>(null);
@@ -16,7 +17,10 @@ export default function Education() {
         </div>
         <div ref={refText} className={isTextVisible ? "fadeInScreen" : ""}>
           <h2>JavaScript Web Developer</h2>
-          <h2>Software University</h2>
+          <h2 className="flex">
+            <img src={softuniLogo} width={50} height={50} alt="" />
+            Software University
+          </h2>
           <h3>(January 2023 - September 2024)</h3>
           <p>
             As a JavaScript Full-Stack Developer trainee, I have gained solid

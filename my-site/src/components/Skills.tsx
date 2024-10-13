@@ -49,6 +49,7 @@ export default function Skills() {
   ];
   return (
     <div className="skillsAll flex flex-col gap-3">
+      <div className="skillsForMobile">Skills</div>
       <div className="skillsAll1 flex flex-row">
         <div className="skillsAll2 mx-2 flex flex-col rounded-3xl px-4 py-2 lg:px-20 border border-stone-50/30">
           <div className="px-6 text-lg lg:text-2xl">Languages</div>

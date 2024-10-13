@@ -1,14 +1,18 @@
 #bio {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 7rem;
   margin: 32px 32px;
   height: 120vh;
 }
+
 #bio p {
   font-size: 20px;
 }
 @media (max-width: 600px) {
   #bio {
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
   }
