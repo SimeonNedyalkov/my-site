@@ -63,7 +63,7 @@ export default function Slider({ projects }: ImageSliderProps) {
     <>
       <h1>Projects</h1>
       <div className="sliderWrapper">
-        <div className="contentSide">
+        <div className="contentSide contentSide1">
           <h2 className={animateTitle ? "projectTitle mb-2" : "mb-2"}>
             {imageName}
           </h2>
@@ -129,7 +129,7 @@ export default function Slider({ projects }: ImageSliderProps) {
           </div>
         </div>
 
-        <div className="contentSide">
+        <div className="contentSide contentSide2">
           <a href={projectDemoUrl} target="_blank" rel="noopener noreferrer">
             {isLoading ? <ClipLoader color="#ffffff" /> : "View Demo"}
           </a>

@@ -187,16 +187,34 @@
   .sliderWrapper {
     flex-direction: column;
     gap: 1rem;
-    height: auto;
+    height: 80vh;
+    margin-bottom: 2rem;
   }
 
   .sliderContainer {
     width: 90%;
-    height: 50%;
+    height: 40%;
   }
 
   .img-slider-button {
     width: 2rem;
     height: 2rem;
+  }
+  .contentSide1 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    left: 0;
+  }
+  .contentSide2 {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    bottom: 0;
+    right: 0;
+  }
+  .img-dot-container {
+    height: auto;
   }
 }
