@@ -8,7 +8,7 @@
 .skillsAll {
   display: flex;
   flex-direction: column;
-  gap: 3rem; /* Space between sections */
+  gap: 3rem;
 }
 .skillsAll2 {
   background-color: rgba(
@@ -20,14 +20,14 @@
   border-radius: 1.5rem;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 100%; /* Adjust width for all screen sizes */
+  width: 100%;
 }
 .skillsAll2 h3 {
-  font-size: 1.5rem; /* Adapt the size for better readability */
+  font-size: 1.5rem;
 }
 
 .skillsAll2 img {
-  margin-right: 10px; /* Space between the image and text */
+  margin-right: 10px;
 }
 @media (max-width: 600px) {
   .skillsForMobile {
@@ -37,17 +37,17 @@
   .skillsAll {
     gap: 1rem;
     padding: 0.5rem;
-    font-size: 0.875rem; /* Reduce font size for small screens */
+    font-size: 0.875rem;
   }
 
   .skillsAll1 {
-    flex-direction: column; /* Stack items vertically on small screens */
+    flex-direction: column;
     gap: 1rem;
   }
 
   .skillsAll2 {
     padding: 1rem;
-    width: 100%; /* Full width for better fit on mobile */
+    width: 100%;
   }
 
   .skillsAll2 h3 {
@@ -55,7 +55,7 @@
   }
 
   .skillsAll2 img {
-    width: 30px; /* Smaller icons for mobile */
+    width: 30px;
     height: 30px;
   }
 }

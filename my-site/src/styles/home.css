@@ -131,18 +131,18 @@
     justify-content: center;
     align-items: center;
     margin: 20px;
-    width: 100vw; /* Take full width of the viewport */
+    width: 100vw;
     gap: 2rem;
   }
 
   .homeText {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    max-width: 90%; /* Prevent overflowing by limiting width */
+    font-size: 14px;
+    max-width: 90%;
     text-align: center;
   }
 
   .homeContainer h1 {
-    font-size: 32px; /* Adjust heading size */
+    font-size: 32px;
   }
 
   .homeContainer h2 {
@@ -154,15 +154,15 @@
   }
 
   .profilePicture {
-    width: 100%; /* Make the profile picture scale on smaller screens */
-    max-width: 250px; /* Limit the width */
-    height: auto; /* Keep aspect ratio */
+    width: 100%;
+    max-width: 250px;
+    height: auto;
   }
 
   .homeAboutMe,
   .homeCode {
     display: flex;
-    width: 100%; /* Use full width for these sections */
+    width: 100%;
     height: 100%;
     margin: 0;
     justify-content: center;
