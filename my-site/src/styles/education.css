@@ -7,7 +7,7 @@
 
 .educationContainer {
   margin: 180px;
-  max-width: 800px; /* Limit the max-width for better readability */
+  max-width: 800px;
 }
 
 .educationTitle h1 {
@@ -37,7 +37,7 @@
   color: rgb(229, 231, 235);
   text-align: left;
   margin-top: 30px;
-  line-height: 1.6; /* Improve readability by increasing line height */
+  line-height: 1.6;
 }
 
 .fadeInScreen {
@@ -73,9 +73,9 @@
   #education {
     display: flex;
     flex-direction: column;
-    margin-top: 60px; /* Adjust margin for mobile */
+    margin-top: 60px;
     height: auto;
-    max-width: 100%; /* Ensure full width on small screens */
+    max-width: 100%;
   }
 
   .educationContainer {
@@ -83,12 +83,12 @@
   }
 
   .educationTitle h1 {
-    font-size: 32px; /* Decrease font size for smaller screens */
+    font-size: 32px;
     margin: 16px 0;
   }
 
   .educationContainer h2 {
-    font-size: 20px; /* Slightly smaller h2 for mobile */
+    font-size: 20px;
   }
 
   .educationContainer h3 {
@@ -96,7 +96,7 @@
   }
 
   .educationContainer p {
-    font-size: 14px; /* Smaller font for mobile readability */
+    font-size: 14px;
     margin-top: 20px;
   }
 }
