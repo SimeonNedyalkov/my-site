@@ -170,17 +170,22 @@
   }
 
   .vertical-icons {
-    position: relative;
-    left: 0; /* Center icons vertically */
-    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
   }
 
   .v-line {
-    display: none; /* Hide vertical line on mobile for simplicity */
+    display: none;
   }
 
   .icons {
-    width: 30px; /* Increase icon size slightly for better touch interaction */
+    width: 30px;
     height: 30px;
   }
 }

@@ -101,7 +101,13 @@ export default function Navigation() {
         <div className="navbar2 fixed rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div className="logoForMobile">
-              <a href="#">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 <img
                   src={logo}
                   alt="logo"
@@ -109,7 +115,7 @@ export default function Navigation() {
                   height="70"
                   className="logoForMobile1 m-2"
                 />
-              </a>
+              </Link>
               <a href="#">
                 <img
                   src={logo2}
