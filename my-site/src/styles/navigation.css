@@ -3,7 +3,7 @@
 @media (max-width: 600px) {
   .navbar2 {
     position: fixed;
-    max-width: 65%;
+    max-width: 100%;
     align-items: center;
     background-color: transparent;
 
