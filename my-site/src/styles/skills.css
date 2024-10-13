@@ -25,7 +25,10 @@
 .skillsAll2 h3 {
   font-size: 1.5rem;
 }
-
+.skillsAll1 {
+  display: flex;
+  flex-direction: row;
+}
 .skillsAll2 img {
   margin-right: 10px;
 }
