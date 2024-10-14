@@ -5,7 +5,7 @@ import Ang from "../assets/skills/angular-svgrepo-com.svg";
 import React from "../assets/skills/react-javascript-js-framework-facebook-svgrepo-com.svg";
 import NodeJS from "../assets/skills/node-js-svgrepo-com.svg";
 import Flask from "../assets/skills/flask-svgrepo-com.svg";
-import NextJS from "../assets/skills/nextjs-svgrepo-com.svg";
+import NestJS from "../assets/skills/nestjs-svgrepo-com.svg";
 import Git from "../assets/skills/git-svgrepo-com.svg";
 import Figma from "../assets/skills/figma-svgrepo-com.svg";
 import Mocha from "../assets/skills/mocha-svgrepo-com.svg";
@@ -30,7 +30,7 @@ export default function Skills() {
         { framework: "Angular", svg: Ang, years: "1+" },
         { framework: "React", svg: React, years: "1+" },
         { framework: "NodeJS", svg: NodeJS, years: "1+" },
-        { framework: "NextJS", svg: NextJS, years: "1-" },
+        { framework: "NestJS", svg: NestJS, years: "1-" },
         { framework: "Flask", svg: Flask, years: "3+" },
       ],
       tools: [
