@@ -3,6 +3,7 @@ import img2 from "../assets/projects/Screenshot 2024-09-01 155050.png";
 import img3 from "../assets/projects/Screenshot 2024-09-01 161416.png";
 import img4 from "../assets/projects/Screenshot 2024-09-05 212729.png";
 import img5 from "../assets/projects/Screenshot 2024-09-05 212941.png";
+import img6 from "../assets/projects/Screenshot 2024-10-22 101706.png";
 import githubIco from "../assets/contact-icons/github-svgrepo-com.svg";
 import linedInIco from "../assets/contact-icons/linkedin-svgrepo-com.svg";
 import outlook from "../assets/contact-icons/mail-svgrepo-com.svg";
@@ -81,6 +82,14 @@ export default function Home() {
       alt: "Image5",
       demoUrl: "no",
       projectCode: "https://github.com/SimeonNedyalkov/movie-magic",
+    },
+    {
+      name: "Restaurant Finder",
+      desc: '" Restaurant Finder " is a React-based app that helps you discover the top-rated restaurants in Varna with just a few simple clicks. Powered by the Google API, it delivers fast and accurate results, making it easy to find the best dining spots in the city.',
+      url: img6,
+      alt: "Image6",
+      demoUrl: "no",
+      projectCode: "https://github.com/SimeonNedyalkov/restaurant-finder-react",
     },
   ];
   const arrayOfContactIcons = [
