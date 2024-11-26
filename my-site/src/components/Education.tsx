@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import useOnScreen from "../hooks/targetElement";
-import softuniLogo from "../assets/softuni/R.png";
+import vfulogo from "../assets/education/R (1).png";
+import softuniLogo from "../assets/education/R.png";
 
 export default function Education() {
   const refTitle = useRef<HTMLDivElement>(null);
@@ -16,6 +17,31 @@ export default function Education() {
           </h1>
         </div>
         <div ref={refText} className={isTextVisible ? "fadeInScreen" : ""}>
+          <h2>Software Engineering and Management</h2>
+          <h2 className="flex">
+            <img
+              src={vfulogo}
+              width={100}
+              height={100}
+              alt=""
+              className="mr-3"
+            />
+            Varna Free University " Chernorizets Hrabar "
+          </h2>
+          <h3>(November 2024 - till now)</h3>
+          <p>
+            I am currently studying Software Engineering and Management, with a
+            focus on software development, system analysis, and project
+            management. The program equips me with skills in programming,
+            algorithms, and team collaboration using agile methodologies,
+            preparing me to oversee and contribute to complex software projects
+            effectively.
+          </p>
+        </div>
+        <div
+          ref={refText}
+          className={isTextVisible ? "mt-10 fadeInScreen" : "mt-10"}
+        >
           <h2>JavaScript Web Developer</h2>
           <h2 className="flex">
             <img src={softuniLogo} width={50} height={50} alt="" />
@@ -23,17 +49,11 @@ export default function Education() {
           </h2>
           <h3>(January 2023 - September 2024)</h3>
           <p>
-            As a JavaScript Full-Stack Developer trainee, I have gained solid
-            practical programming skills, including logical thinking and
-            problem-solving abilities,component testing, data structures and
-            algorithms, object-oriented and functional programming, and the
-            ability to write high-quality code. I have specialized in developing
-            modern web applications using contemporary web technologies, tools,
-            and frameworks within the JavaScript ecosystem. My training has
-            covered HTML, CSS, JavaScript, jQuery, Angular, React, Node.js,
-            Express.js, SASS, Bootstrap, Single Page Applications (SPA), RESTful
-            services, and DOM. Additionally, I have experience with Git, GitHub,
-            and collaboration tools for effective team development.
+            As a JavaScript Full-Stack Developer trainee, I developed skills in
+            web development using modern tools and frameworks, including HTML,
+            CSS, JavaScript, React, Angular and Node.js. I also gained
+            experience in testing, algorithms, databases, object-oriented and
+            functional programming and version control with Git.
           </p>
         </div>
       </div>
