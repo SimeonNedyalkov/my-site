@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   gap: 7rem;
-  margin: 32px 32px;
+  margin: 2rem 2rem;
   height: 120vh;
 }
 
@@ -36,5 +36,6 @@
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 }
