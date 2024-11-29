@@ -45,7 +45,7 @@
 }
 
 .slideInTop {
-  animation: slideInTop 1s ease-out;
+  animation: slideInTop 2s ease-out;
 }
 
 @keyframes fadeIn {
@@ -98,5 +98,9 @@
   .educationContainer p {
     font-size: 14px;
     margin-top: 20px;
+  }
+  .vfuLogo {
+    width: 4rem;
+    height: 4rem;
   }
 }

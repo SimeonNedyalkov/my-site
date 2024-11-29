@@ -24,7 +24,7 @@ export default function Education() {
               width={100}
               height={100}
               alt=""
-              className="mr-3"
+              className="vfuLogo mr-3"
             />
             Varna Free University " Chernorizets Hrabar "
           </h2>

@@ -68,6 +68,7 @@
 @media (max-width: 600px) {
   .myCode {
     padding: 10px;
+    height: 27rem;
   }
 
   .homeAboutMe {
@@ -87,7 +88,7 @@
   .hire,
   .number,
   .cssVar {
-    font-size: 14px;
+    font-size: 0.5rem;
   }
 }
 
