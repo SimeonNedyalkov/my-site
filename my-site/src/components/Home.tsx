@@ -1,4 +1,4 @@
-import img1 from "../assets/projects/Screenshot 2024-12-09 133926.png";
+import img1 from "../assets/projects/Screenshot 2024-12-12 095413.png";
 import img2 from "../assets/projects/Screenshot 2024-09-01 155000.png";
 import img3 from "../assets/projects/Screenshot 2024-09-01 155050.png";
 import img4 from "../assets/projects/Screenshot 2024-09-01 161416.png";
@@ -45,7 +45,7 @@ export default function Home() {
   const arrayOfProjects = [
     {
       name: "Lenion",
-      desc: '" Lenion " is React-based application, written in Typescript and SCSS with a futuristic design, that utilising three.js / react/three-fiber to build a futuristic 3d clothes shop. With the help of redux to manage the store and state.',
+      desc: '" Lenion " is React-based application, written in Typescript and SCSS with a futuristic design, utilising three.js / react/three-fiber to build a futuristic 3d clothes shop. With the help of redux to manage the store and state.',
       url: img1,
       alt: "Image1",
       demoUrl: "no",
