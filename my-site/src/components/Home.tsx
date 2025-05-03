@@ -46,7 +46,7 @@ export default function Home() {
   const arrayOfProjects = [
     {
       name: "Tehno Transport",
-      desc: '" Tehno Transport " is React-based application, written in Typescript with a functions to handle Yearly techno tests, utilising nest.js as a server firebase for database handling',
+      desc: '" Tehno Transport " is React-based application, written in Typescript with a functions to handle Yearly techno tests, utilising nest.js as a server and firebase for database handling',
       url: img8,
       alt: "Image8",
       demoUrl: "https://tehno-transport.vercel.app/",
