@@ -5,6 +5,7 @@ import img4 from "../assets/projects/Screenshot 2024-09-01 161416.png";
 import img5 from "../assets/projects/Screenshot 2024-09-05 212729.png";
 import img6 from "../assets/projects/Screenshot 2024-09-05 212941.png";
 import img7 from "../assets/projects/Screenshot 2024-10-22 101706.png";
+import img8 from "../assets/projects/Screenshot 2025-05-03 102951.png";
 import githubIco from "../assets/contact-icons/github-svgrepo-com.svg";
 import linedInIco from "../assets/contact-icons/linkedin-svgrepo-com.svg";
 import outlook from "../assets/contact-icons/mail-svgrepo-com.svg";
@@ -43,6 +44,14 @@ export default function Home() {
   }, []);
 
   const arrayOfProjects = [
+    {
+      name: "Tehno Transport",
+      desc: '" Tehno Transport " is React-based application, written in Typescript with a functions to handle Yearly techno tests, utilising nest.js as a server firebase for database handling',
+      url: img8,
+      alt: "Image8",
+      demoUrl: "https://tehno-transport.vercel.app/",
+      projectCode: "https://github.com/SimeonNedyalkov/tehnoTransportFrontend",
+    },
     {
       name: "Lenion",
       desc: '" Lenion " is React-based application, written in Typescript and SCSS with a futuristic design, utilising three.js / react/three-fiber to build a futuristic 3d clothes shop. With the help of redux to manage the store and state.',

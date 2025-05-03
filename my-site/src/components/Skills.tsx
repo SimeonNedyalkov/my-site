@@ -30,7 +30,7 @@ export default function Skills() {
         { framework: "Angular", svg: Ang, years: "1+" },
         { framework: "React", svg: React, years: "1+" },
         { framework: "NodeJS", svg: NodeJS, years: "1+" },
-        { framework: "NestJS", svg: NestJS, years: "1-" },
+        { framework: "NestJS", svg: NestJS, years: "1+" },
         { framework: "Flask", svg: Flask, years: "3+" },
       ],
       tools: [
