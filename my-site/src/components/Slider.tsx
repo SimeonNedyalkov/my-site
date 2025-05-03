@@ -111,19 +111,21 @@ export default function Slider({ projects }: ImageSliderProps) {
             <ArrowBigRight aria-hidden />
           </button>
 
-          <div className="img-dot-container">
-            {projects.map((_, index) => (
+          <div className="img-thumb-container">
+            {projects.map(({ url, alt }, index) => (
               <button
                 key={index}
-                className="img-dot-buttons"
+                className="img-thumb-button"
                 onClick={() => setImageIndex(index)}
                 aria-label={`viewImage ${index}`}
               >
-                {index === imageIndex ? (
-                  <CircleDot aria-hidden className="ifDot" />
-                ) : (
-                  <Circle aria-hidden />
-                )}
+                <img
+                  src={url}
+                  alt={alt}
+                  className={`img-thumb ${
+                    index === imageIndex ? "active" : "blurred"
+                  }`}
+                />
               </button>
             ))}
           </div>

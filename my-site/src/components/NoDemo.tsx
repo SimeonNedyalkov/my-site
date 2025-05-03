@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import sorry from "../assets/sorry/sorry-3905517_960_720.webp";
 
 export default function NoDemo() {
+  const navigation = useNavigate();
+  const returnHome = () => {
+    navigation("/");
+  };
   return (
     <div className="no-demo-container">
       <img
@@ -17,9 +22,9 @@ export default function NoDemo() {
       <p className="no-demo-suggestion">
         Please check back later or contact me for more information!
       </p>
-      <a href="/" className="no-demo-button">
+      <button onClick={returnHome} className="no-demo-button">
         Go Back Home
-      </a>
+      </button>
     </div>
   );
 }
