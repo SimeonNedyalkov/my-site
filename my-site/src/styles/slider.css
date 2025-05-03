@@ -73,41 +73,6 @@
   border-radius: 15px;
 }
 
-.img-dot-container {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.5rem;
-}
-
-.img-dot-buttons {
-  all: unset;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.img-dot-buttons:hover {
-  transform: scale(1.2);
-}
-
-.img-dot-buttons > * {
-  fill: white;
-  stroke: none;
-}
-
-.img-dot-buttons:hover > * {
-  fill: #ff6f61;
-}
-.ifDot {
-  fill: #ff6f61;
-}
 .projectTitle {
   animation: slideInTop 1s ease-out;
 }
