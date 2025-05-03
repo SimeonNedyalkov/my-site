@@ -92,6 +92,18 @@ export default function Navigation() {
                     Education
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-sm hover:text-blue-800 cursor-pointer"
+                    to="certificates"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Certificates
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
