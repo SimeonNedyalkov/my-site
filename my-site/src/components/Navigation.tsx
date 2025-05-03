@@ -51,14 +51,14 @@ export default function Navigation() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                   >
                     Projects
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                     to="bio"
                     spy={true}
                     smooth={true}
@@ -70,7 +70,7 @@ export default function Navigation() {
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                     to="skills"
                     spy={true}
                     smooth={true}
@@ -82,7 +82,7 @@ export default function Navigation() {
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                     to="education"
                     spy={true}
                     smooth={true}
@@ -154,14 +154,14 @@ export default function Navigation() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                   >
                     Projects
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                     to="bio"
                     spy={true}
                     smooth={true}
@@ -173,7 +173,7 @@ export default function Navigation() {
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                     to="skills"
                     spy={true}
                     smooth={true}
@@ -185,7 +185,7 @@ export default function Navigation() {
                 </li>
                 <li>
                   <Link
-                    className="text-sm hover:text-green-400 cursor-pointer"
+                    className="text-sm hover:text-blue-800 cursor-pointer"
                     to="education"
                     spy={true}
                     smooth={true}

@@ -96,9 +96,11 @@
   animation: shake 1s;
 }
 .icons:hover {
-  filter: invert(32%) sepia(49%) saturate(637%) hue-rotate(77deg)
-    brightness(96%) contrast(95%);
+  filter: invert(21%) sepia(90%) saturate(1000%) hue-rotate(209deg)
+    brightness(64%) contrast(97%);
+  transition: filter 0.8s ease-in-out;
 }
+
 @keyframes growLine {
   from {
     height: 0;
