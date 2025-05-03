@@ -173,7 +173,7 @@
 
   .vertical-icons {
     position: absolute;
-    bottom: 0;
+    top: 0;
     display: flex;
     flex-direction: row;
     position: absolute;

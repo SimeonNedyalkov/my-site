@@ -7,15 +7,20 @@ export default function Bio() {
   return (
     <div
       ref={ref}
-      className={isVisible ? "dynamicBackground text-7xl" : "text-7xl"}
+      className={
+        isVisible
+          ? "bioContainer dynamicBackground text-7xl"
+          : "bioContainer text-7xl"
+      }
     >
-      <h1>Bio</h1>
-      <p className="mt-6 text-lg">
+      <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">Bio</h1>
+      <p className="bioText text-base sm:text-lg lg:text-xl mb-6 leading-relaxed">
         I'm Simeon Nedyalkov, a JavaScript Web Development graduate from
         Software University, class of 2024. Currently studying Software
-        Engineering and Management in Varna Free University.<br></br> I am
-        passionate about creating modern, responsive web applications. <br></br>{" "}
-        I focus on building clean and efficient code.
+        Engineering and Management in Varna Free University.
+        <br />
+        I am passionate about creating modern, responsive web applications.
+        <br />I focus on building clean and efficient code.
       </p>
       <a
         href="https://drive.google.com/file/d/1FR4rM8yiobFs32aBGIov4hcI2gJkd0sK/view?usp=drive_link"
