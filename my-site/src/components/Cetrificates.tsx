@@ -74,7 +74,7 @@ export default function Certificates() {
   const visibleCerts = showAll ? arrayWithCerts : arrayWithCerts.slice(0, 6);
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-16 min-h-screen">
-      <h1 className="text-5xl font-extrabold text-center mb-12">
+      <h1 className="text-5xl font-extrabold text-center mb-12 pb-5">
         📜 Certificates
       </h1>
 
@@ -90,7 +90,7 @@ export default function Certificates() {
             <iframe
               src={cert.file}
               width="100%"
-              height="300px"
+              height="100%"
               title={cert.name}
               className="w-full border border-gray-300 rounded-lg mb-4"
             ></iframe>

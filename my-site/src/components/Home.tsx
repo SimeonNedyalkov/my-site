@@ -46,14 +46,6 @@ export default function Home() {
 
   const arrayOfProjects = [
     {
-      name: "Tehno Transport",
-      desc: '" Tehno Transport " is React-based application, written in Typescript with a functions to handle Yearly techno tests, utilising nest.js as a server and firebase for database handling',
-      url: img8,
-      alt: "Image8",
-      demoUrl: "https://tehno-transport.vercel.app/",
-      projectCode: "https://github.com/SimeonNedyalkov/tehnoTransportFrontend",
-    },
-    {
       name: "Lenion",
       desc: '" Lenion " is React-based application, written in Typescript and SCSS with a futuristic design, utilising three.js / react/three-fiber to build a futuristic 3d clothes shop. With the help of redux to manage the store and state.',
       url: img1,
@@ -77,6 +69,14 @@ export default function Home() {
       demoUrl: "https://choose-your-fighter-client.vercel.app/",
       projectCode:
         "https://github.com/SimeonNedyalkov/Choose-Your-Figher-React",
+    },
+    {
+      name: "Tehno Transport",
+      desc: '" Tehno Transport " is React-based application, written in Typescript with a functions to handle Yearly techno tests, utilising nest.js as a server and firebase for database handling',
+      url: img8,
+      alt: "Image8",
+      demoUrl: "https://tehno-transport.vercel.app/",
+      projectCode: "https://github.com/SimeonNedyalkov/tehnoTransportFrontend",
     },
     {
       name: "Magma Heaven",
@@ -133,9 +133,6 @@ export default function Home() {
       href: "mailto:simeon.nedyalkovv@gmail.com",
     },
   ];
-  // const ProfileImage = () => (
-
-  // );
 
   return (
     <div id="home" className="homeAll mt-30 antialiased">
@@ -163,14 +160,12 @@ export default function Home() {
           </p>
         </div>
 
-        {/* <img className="profilePicture" src={`${picture}`} alt="me" /> */}
         <div className="flex justify-end items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
           <div
             className="relative group"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            {/* Optimized gradient backgrounds with reduced complexity for mobile */}
             <div className="absolute -inset-6 opacity-[25%] z-0 hidden sm:block">
               <div className="absolute inset-0 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 rounded-full blur-2xl animate-spin-slower" />
               <div className="absolute inset-0 bg-gradient-to-l from-fuchsia-500 via-rose-500 to-pink-600 rounded-full blur-2xl animate-pulse-slow opacity-50" />
@@ -181,7 +176,6 @@ export default function Home() {
               <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(120,119,198,0.3)] transform transition-all duration-700 group-hover:scale-105">
                 <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
 
-                {/* Optimized overlay effects - disabled on mobile */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 z-10 transition-opacity duration-700 group-hover:opacity-0 hidden sm:block" />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
 
@@ -191,8 +185,6 @@ export default function Home() {
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
                   loading="lazy"
                 />
-
-                {/* Advanced hover effects - desktop only */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 z-20 hidden sm:block">
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-white/10 to-transparent transform translate-y-full group-hover:-translate-y-full transition-transform duration-1000 delay-100" />
@@ -204,7 +196,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Attach ref to the section you want to observe */}
       <section id="projects">
         <Slider projects={arrayOfProjects}></Slider>
       </section>
